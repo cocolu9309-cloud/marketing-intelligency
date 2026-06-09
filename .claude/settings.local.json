@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(claude *)",
+      "Skill(deep-research)",
+      "WebFetch(domain:callie.com)",
+      "mcp__MiniMax__web_search",
+      "PowerShell(python -c \"from docx import Document; doc = Document\\(r'D:\\\\工作\\\\网翔\\\\课题方案\\\\用户运营\\\\Remarketing\\\\Callie-IDG-Remarketing-Plan-Final.docx'\\); [print\\(p.text\\) for p in doc.paragraphs]\" 2>$null)",
+      "PowerShell(python -c \"import openpyxl; wb = openpyxl.load_workbook\\(r'D:\\\\工作\\\\网翔\\\\课题方案\\\\社交媒体运营\\\\gift_phrase-match_us_2026-06-03.xlsx'\\); ws = wb.active; print\\('Headers:', [cell.value for cell in ws[1]]\\); print\\('Total rows:', ws.max_row\\); print\\('First 5 rows of keywords:', [ws.cell\\(i, 2\\).value for i in range\\(2, 7\\)]\\)\")",
+      "PowerShell(python -c \"import pandas as pd; df = pd.read_excel\\(r'D:\\\\工作\\\\网翔\\\\课题方案\\\\社交媒体运营\\\\gift_phrase-match_us_2026-06-03.xlsx'\\); print\\('Columns:', df.columns.tolist\\(\\)\\); print\\('Shape:', df.shape\\); print\\('First 5 keywords:', df.iloc[:5, 1].tolist\\(\\)\\)\")",
+      "PowerShell(pip install *)",
+      "PowerShell(python -c \"import pandas as pd; df = pd.read_excel\\(r'D:\\\\工作\\\\网翔\\\\课题方案\\\\社交媒体运营\\\\gift_phrase-match_us_2026-06-03.xlsx'\\); print\\('Columns:', df.columns.tolist\\(\\)\\); print\\('Shape:', df.shape\\); print\\('First 10 keywords:', df.iloc[:10, 1].tolist\\(\\)\\)\")",
+      "PowerShell(python -c \"import pandas as pd; df = pd.read_excel\\(r'D:\\\\工作\\\\网翔\\\\课题方案\\\\社交媒体运营\\\\gift_phrase-match_us_2026-06-03.xlsx'\\); print\\('Columns:', df.columns.tolist\\(\\)\\); print\\('Keyword col first 10:', df['Keyword'].head\\(10\\).tolist\\(\\)\\)\")",
+      "PowerShell(python -c \"import docx; doc = docx.Document\\(r'D:\\\\工作\\\\网翔\\\\课题方案\\\\用户运营\\\\Remarketing\\\\Callie-IDG-Remarketing-Plan-Final.docx'\\); [print\\(p.text\\) for p in doc.paragraphs]\")",
+      "PowerShell(python -c \"import pandas as pd; df = pd.read_excel\\(r'D:\\\\工作\\\\网翔\\\\课题方案\\\\用户运营\\\\Remarketing\\\\宠物品类销售数据_20260508.xlsx'\\); print\\(df.to_string\\(\\)\\)\")",
+      "PowerShell(python -c \"import pandas as pd; df = pd.read_excel\\(r'D:\\\\工作\\\\网翔\\\\课题方案\\\\用户运营\\\\Remarketing\\\\20260526_Callie郑锶婷_美国站2026年5月赠品活动ins新媒体素材设计需求表.xlsx'\\); print\\('Columns:', df.columns.tolist\\(\\)\\); print\\('---'\\); print\\(df.head\\(10\\).to_string\\(\\)\\)\")",
+      "PowerShell(python -c \"import openpyxl; wb = openpyxl.load_workbook\\(r'D:\\\\工作\\\\网翔\\\\课题方案\\\\社交媒体运营\\\\gift_phrase-match_us_2026-06-03.xlsx'\\); print\\('Sheets:', wb.sheetnames\\); ws = wb.active; print\\('Dims:', ws.dimensions\\); print\\('First 5 rows:'\\); [print\\(list\\(r\\)\\) for r in list\\(ws.iter_rows\\(min_row=1, max_row=5\\)\\)]\")",
+      "PowerShell(python -c \"import openpyxl; wb = openpyxl.load_workbook\\(r'D:\\\\工作\\\\网翔\\\\课题方案\\\\社交媒体运营\\\\gift_phrase-match_us_2026-06-03.xlsx'\\); ws = wb.active; rows = list\\(ws.iter_rows\\(values_only=True\\)\\); print\\(rows[:10]\\)\")",
+      "PowerShell(python -c \"import openpyxl; wb=openpyxl.load_workbook\\(r'D:/工作/网翔/课题方案/社交媒体运营/gift_phrase-match_us_2026-06-03_filtered.xlsx'\\); ws=wb.active; rows=list\\(ws.iter_rows\\(values_only=True\\)\\); print\\('Total rows:',len\\(rows\\)\\); print\\('Sample:',[r[0] for r in rows[:8]]\\)\")",
+      "WebFetch(domain:docs.qq.com)",
+      "WebFetch(domain:zhuanlan.zhihu.com)",
+      "PowerShell(python -c \"import openpyxl; print\\('openpyxl available'\\)\" 2>&1)",
+      "PowerShell(Test-Path \"D:\\\\工作\\\\AI\\\\claude-demo\\\\marketing-intelligence\\\\data\\\\articles.json\"; \\(Get-Content \"D:\\\\工作\\\\AI\\\\claude-demo\\\\marketing-intelligence\\\\data\\\\articles.json\" -Raw | ConvertFrom-Json | Measure-Object\\).Count)",
+      "PowerShell(python D:\\\\工作\\\\AI\\\\claude-demo\\\\marketing-intelligence\\\\scripts\\\\crawl.py)",
+      "PowerShell(hugo version2>$null; if \\($LASTEXITCODE -ne 0\\) { \"Hugo not installed\" })",
+      "PowerShell($data = Get-Content \"D:\\\\工作\\\\AI\\\\claude-demo\\\\marketing-intelligence\\\\data\\\\articles.json\" -Raw | ConvertFrom-Json; $data.count)"
+    ]
+  }
+}

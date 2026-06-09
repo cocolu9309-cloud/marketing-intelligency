@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(claude doctor *)",
+      "PowerShell(claude *)"
+    ]
+  },
+  "env": {
+    "PATH": "C:\\Users\\86130\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\86130\\.local\\bin;%PATH%",
+    "ANTHROPIC_BASE_URL": "https://api.minimaxi.com/anthropic",
+    "ANTHROPIC_AUTH_TOKEN": "sk-cp-_vJU1xDTzXfpoEucqiaZb0P3HiFVJhKIY0k3xuc6yllTsqE6KUNRqBrllHhJDWnPe3KXe1-uPuRLFuWjE2BfL02A7DaC4BJTxEkK5kugHSGlNpmX6qOLYWo",
+    "ANTHROPIC_MODEL": "MiniMax-M2.7",
+    "API_TIMEOUT_MS": "3000000",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1"
+  }
+}
