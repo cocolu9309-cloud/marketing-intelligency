@@ -1,16 +1,13 @@
 // 全局变量
 let allArticles = [];
 let currentFilters = {
-    department: "all",
-    contentType: "all",
-    importance: "all",
-    timeRange: "all",
-    keyword: ""
+    department: 'all',
+    contentType: 'all',
+    importance: 'all',
+    timeRange: 'all',
+    keyword: ''
 };
 
-/**
- * 从 /data/articles.json 获取数据
- */
 async function loadArticles() {
     try {
         const response = await fetch('./data/articles.json');
@@ -19,190 +16,68 @@ async function loadArticles() {
         updateLastUpdated();
         renderArticles();
     } catch (error) {
-        console.error('加载文章失败:', error);
-        document.getElementById('articlesContainer').innerHTML =
-            '<div class="empty-state">加载失败，请刷新页面重试</div>';
+        document.getElementById('articlesContainer').innerHTML = '<div class="empty-state">加载失败</div>';
     }
 }
 
-/**
- * 从最新文章获取时间，格式化为中文显示
- */
 function updateLastUpdated() {
     if (!allArticles || allArticles.length === 0) return;
-    const crawledAt = allArticles[0].crawled_at;
-    const date = parseDate(crawledAt);
-    const options = {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-        hour: '2-digit',
-        minute: '2-digit'
-    };
-    const formatted = date.toLocaleString('zh-CN', options);
-    document.getElementById('lastUpdated').textContent = `最后更新: ${formatted}`;
+    const date = new Date(allArticles[0].crawled_at);
+    document.getElementById('lastUpdated').textContent = '最后更新: ' + date.toLocaleString('zh-CN');
 }
 
-/**
- * 解析 RFC 3339 日期字符串为 Date 对象
- */
-function parseDate(dateStr) {
-    return new Date(dateStr);
-}
+function parseDate(dateStr) { return new Date(dateStr); }
 
-/**
- * 核心筛选函数
- */
 function filterArticles() {
     return allArticles.filter(article => {
-        // 部门筛选
-        if (currentFilters.department !== 'all') {
-            if (article.department !== currentFilters.department) return false;
-        }
-
-        // 内容类型筛选
-        if (currentFilters.contentType !== 'all') {
-            if (article.content_type !== currentFilters.contentType) return false;
-        }
-
-        // 重要程度筛选
-        if (currentFilters.importance !== 'all') {
-            const imp = parseInt(article.importance);
-            if (currentFilters.importance === 'high' && imp < 4) return false;
-            if (currentFilters.importance === 'medium' && (imp < 2 || imp >= 4)) return false;
-            if (currentFilters.importance === 'low' && imp >= 2) return false;
-        }
-
-        // 时间范围筛选
+        if (currentFilters.department !== 'all' && article.department !== currentFilters.department) return false;
+        if (currentFilters.contentType !== 'all' && article.content_type !== currentFilters.contentType) return false;
+        if (currentFilters.importance !== 'all' && article.importance !== currentFilters.importance) return false;
         if (currentFilters.timeRange !== 'all') {
-            const articleDate = parseDate(article.crawled_at);
-            const now = new Date();
-            const diffMs = now - articleDate;
-            const diffDays = diffMs / (1000 * 60 * 60 * 24);
-
+            const diffDays = (new Date() - parseDate(article.crawled_at)) / 86400000;
             if (currentFilters.timeRange === 'today' && diffDays > 1) return false;
             if (currentFilters.timeRange === 'week' && diffDays > 7) return false;
             if (currentFilters.timeRange === 'month' && diffDays > 30) return false;
         }
-
-        // 关键词搜索
         if (currentFilters.keyword) {
-            const keyword = currentFilters.keyword.toLowerCase();
-            const searchableText = [
-                article.title,
-                article.one_sentence_summary || '',
-                article.why_important || '',
-                article.how_to_use || ''
-            ].join(' ').toLowerCase();
-            if (!searchableText.includes(keyword)) return false;
+            const text = (article.title + ' ' + (article['one_sentence_summary']||'') + ' ' + (article['why_important']||'') + ' ' + (article['how_to_use']||'')).toLowerCase();
+            if (!text.includes(currentFilters.keyword.toLowerCase())) return false;
         }
-
         return true;
     });
 }
 
-/**
- * 渲染文章列表
- */
 function renderArticles() {
     const filtered = filterArticles();
     const container = document.getElementById('articlesContainer');
-
-    if (filtered.length === 0) {
-        container.innerHTML = '<div class="empty-state">暂无符合条件的资讯</div>';
-        return;
-    }
-
-    const html = filtered.map(article => {
-        const stars = '★'.repeat(article.importance) + '☆'.repeat(5 - article.importance);
-        const date = parseDate(article.crawled_at).toLocaleString('zh-CN', {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric',
-            hour: '2-digit',
-            minute: '2-digit'
-        });
-
-        return `
-        <div class="article-card">
-            <div class="article-header">
-                <span class="importance-stars">${stars}</span>
-                <h3 class="article-title">
-                    <a href="${article.url}" target="_blank">${article.title}</a>
-                </h3>
-            </div>
-            <div class="article-meta">
-                <span class="tag department-tag">${article.department}</span>
-                <span class="tag type-tag">${article.content_type}</span>
-                <span class="tag source-tag">${article.source}</span>
-                <span class="tag time-tag">${date}</span>
-            </div>
-            <div class="article-summary">
-                <p class="one-sentence"><strong>一句话:</strong> ${article.one_sentence_summary || '暂无'}</p>
-                <p class="why-important"><strong>为什么重要:</strong> ${article.why_important || '暂无'}</p>
-                <p class="how-to-use"><strong>怎么用:</strong> ${article.how_to_use || '暂无'}</p>
-            </div>
-            <div class="article-footer">
-                <a href="${article.url}" target="_blank" class="btn-read-more">查看原文</a>
-            </div>
-        </div>
-    `;
+    if (filtered.length === 0) { container.innerHTML = '<div class="empty-state">暂无符合条件的资讯</div>'; return; }
+    container.innerHTML = filtered.map(article => {
+        const date = parseDate(article.published || article.crawled_at).toLocaleDateString('zh-CN');
+        return <div class="article-card">
+            <div class="article-header"><span class="article-importance"></span>
+            <h3 class="article-title"><a href="" target="_blank"></a></h3></div>
+            <div class="article-meta"><span class="tag dept"></span><span class="tag"></span><span class="tag"></span><span class="tag"></span></div>
+            <div class="article-summary"><p><strong>📌 一句话：</strong></p><p><strong>💡 为什么重要：</strong></p><p><strong>🎯 怎么用：</strong></p></div>
+            <div class="article-footer"><a class="article-link" href="" target="_blank">查看原文 →</a></div>
+        </div>;
     }).join('');
-
-    container.innerHTML = html;
 }
 
-/**
- * 初始化事件监听
- */
 function initEventListeners() {
-    // Tab 按钮点击
     document.querySelectorAll('.tab').forEach(tab => {
         tab.addEventListener('click', () => {
             document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
             tab.classList.add('active');
-            currentFilters.department = tab.dataset.department || 'all';
+            currentFilters.department = tab.dataset.dept || 'all';
             renderArticles();
         });
     });
-
-    // 内容类型筛选
-    document.getElementById('typeFilter').addEventListener('change', (e) => {
-        currentFilters.contentType = e.target.value;
-        renderArticles();
-    });
-
-    // 重要程度筛选
-    document.getElementById('importanceFilter').addEventListener('change', (e) => {
-        currentFilters.importance = e.target.value;
-        renderArticles();
-    });
-
-    // 时间范围筛选
-    document.getElementById('timeFilter').addEventListener('change', (e) => {
-        currentFilters.timeRange = e.target.value;
-        renderArticles();
-    });
-
-    // 搜索输入 - 300ms 防抖
-    let searchTimeout;
-    document.getElementById('searchInput').addEventListener('input', (e) => {
-        clearTimeout(searchTimeout);
-        searchTimeout = setTimeout(() => {
-            currentFilters.keyword = e.target.value.trim();
-            renderArticles();
-        }, 300);
-    });
-
-    // 搜索按钮点击
-    document.getElementById('searchBtn').addEventListener('click', () => {
-        currentFilters.keyword = document.getElementById('searchInput').value.trim();
-        renderArticles();
-    });
+    document.getElementById('typeFilter').addEventListener('change', e => { currentFilters.contentType = e.target.value; renderArticles(); });
+    document.getElementById('importanceFilter').addEventListener('change', e => { currentFilters.importance = e.target.value; renderArticles(); });
+    document.getElementById('timeFilter').addEventListener('change', e => { currentFilters.timeRange = e.target.value; renderArticles(); });
+    let timeout;
+    document.getElementById('searchInput').addEventListener('input', e => { clearTimeout(timeout); timeout = setTimeout(() => { currentFilters.keyword = e.target.value.trim(); renderArticles(); }, 300); });
+    document.getElementById('searchBtn').addEventListener('click', () => { currentFilters.keyword = document.getElementById('searchInput').value.trim(); renderArticles(); });
 }
 
-// DOMContentLoaded 初始化
-document.addEventListener('DOMContentLoaded', () => {
-    initEventListeners();
-    loadArticles();
-});
+document.addEventListener('DOMContentLoaded', () => { initEventListeners(); loadArticles(); });
