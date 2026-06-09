@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta name="generator" content="Hugo 0.163.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callie.com 营销资讯中心</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>🔥 营销情报中心</h1>
+        <p class="subtitle">专注营销人员的知识聚合平台</p>
+    </header>
+
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="搜索文章标题或内容...">
+        <button id="searchBtn">搜索</button>
+    </div>
+
+    <div class="tabs">
+        <button class="tab active" data-dept="all">全部</button>
+        <button class="tab" data-dept="social-media">社媒运营</button>
+        <button class="tab" data-dept="influencer">红人营销</button>
+        <button class="tab" data-dept="advertising">广告投放</button>
+        <button class="tab" data-dept="user-operation">用户运营</button>
+        <button class="tab" data-dept="seo">SEO</button>
+        <button class="tab" data-dept="branding">品牌</button>
+    </div>
+
+    <div class="filters">
+        <select id="typeFilter">
+            <option value="">类型（全部）</option>
+            <option value="article">文章</option>
+            <option value="case-study">案例</option>
+            <option value="tool">工具</option>
+        </select>
+        <select id="priorityFilter">
+            <option value="">重要程度（全部）</option>
+            <option value="high">重要</option>
+            <option value="medium">一般</option>
+            <option value="low">普通</option>
+        </select>
+        <select id="timeFilter">
+            <option value="">时间范围（全部）</option>
+            <option value="7days">近7天</option>
+            <option value="30days">近30天</option>
+            <option value="90days">近90天</option>
+            <option value="year">近1年</option>
+        </select>
+    </div>
+
+    <main id="articlesContainer" class="articles-container">
+        
+    </main>
+
+    <footer class="footer">
+        <p>callie.com 营销资讯中心 · 由 GitHub Actions 自动更新</p>
+    </footer>
+
+    <script src="/js/search.js"></script>
+</body>
+</html>
