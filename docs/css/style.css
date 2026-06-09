@@ -176,12 +176,24 @@ body {
   font-weight: 600;
 }
 
+/* .article-title-wrap */
+.article-title-wrap {
+  flex: 1;
+}
+
 /* .article-title */
 .article-title {
-  flex: 1;
   font-size: 18px;
   font-weight: 600;
   color: #1a1a1a;
+  margin-bottom: 4px;
+}
+
+/* .article-title-cn */
+.article-title-cn {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
 }
 
 /* .article-title a */
