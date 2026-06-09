@@ -40,7 +40,7 @@ function filterArticles() {
             if (currentFilters.timeRange === 'month' && diffDays > 30) return false;
         }
         if (currentFilters.keyword) {
-            const text = (article.title + ' ' + (article['一句话结论']||'') + ' ' + (article['为什么重要']||'') + ' ' + (article['可以怎么用']||'')).toLowerCase();
+            const text = (article.title + ' ' + (article['one_sentence']||'') + ' ' + (article['why_important']||'') + ' ' + (article['how_to_use']||'')).toLowerCase();
             if (!text.includes(currentFilters.keyword.toLowerCase())) return false;
         }
         return true;
@@ -57,7 +57,7 @@ function renderArticles() {
             '<div class="article-header"><span class="article-importance">' + article.importance + '</span>' +
             '<h3 class="article-title"><a href="' + article.url + '" target="_blank">' + article.title + '</a></h3></div>' +
             '<div class="article-meta"><span class="tag dept">' + article.department + '</span><span class="tag">' + article.content_type + '</span><span class="tag">' + (article.source_name || article.source) + '</span><span class="tag">' + date + '</span></div>' +
-            '<div class="article-summary"><p><strong>📌 一句话：</strong>' + (article['一句话结论'] || '-') + '</p><p><strong>💡 为什么重要：</strong>' + (article['为什么重要'] || '-') + '</p><p><strong>🎯 怎么用：</strong>' + (article['可以怎么用'] || '-') + '</p></div>' +
+            '<div class="article-summary"><p><strong>📌 一句话：</strong>' + (article['one_sentence'] || '-') + '</p><p><strong>💡 为什么重要：</strong>' + (article['why_important'] || '-') + '</p><p><strong>🎯 怎么用：</strong>' + (article['how_to_use'] || '-') + '</p></div>' +
             '<div class="article-footer"><a class="article-link" href="' + article.url + '" target="_blank">查看原文 →</a></div>' +
         '</div>';
     }).join('');
