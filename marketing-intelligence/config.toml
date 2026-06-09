@@ -1,0 +1,14 @@
+baseURL = "https://callie-marketing.github.io/"
+languageCode = "zh-CN"
+title = "callie.com 营销资讯中心"
+theme = []
+
+[outputs]
+home = ["HTML"]
+
+[taxonomies]
+department = "department"
+content_type = "content_type"
+
+[params]
+description = "全球前沿营销玩法资讯，实时更新"
