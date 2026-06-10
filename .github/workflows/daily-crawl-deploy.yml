@@ -43,7 +43,7 @@ jobs:
       - name: Build Hugo site
         run: |
           rm -rf public
-          hugo --destination public --gc --minify
+          hugo --destination public
         working-directory: ./marketing-intelligence
 
       - name: Deploy to GitHub Pages
