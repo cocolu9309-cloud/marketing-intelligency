@@ -32,6 +32,8 @@ jobs:
       - name: Generate Chinese summaries
         run: python scripts/improve_summaries.py
         working-directory: ./marketing-intelligence
+        continue-on-error: true
+        timeout-minutes: 20
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
