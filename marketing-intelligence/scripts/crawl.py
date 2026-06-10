@@ -19,6 +19,14 @@ RSS_SOURCES = {
     "youtube_blog": "https://blog.youtube/rss.xml",
     "google_ads_blog": "https://adsdeveloper.blogspot.com/feeds/posts/default",
     "meta_business": "https://www.facebook.com/business/news/rss",
+    # 用户洞察
+    "omnisend": "https://www.omnisend.com/blog/feed/",
+    "hootsuite": "https://blog.hootsuite.com/feed/",
+    "brandwatch": "https://www.brandwatch.com/feed/",
+    # 定制礼品行业趋势
+    "practical_ecommerce": "https://www.practicalecommerce.com/feed/",
+    "small_business_trends": "https://smallbiztrends.com/feed/",
+    "printful": "https://www.printful.com/blog/feed",
 }
 
 # Etsy 竞品店铺配置
@@ -30,14 +38,28 @@ ETSY_SHOPS = [
 
 # 部门归属映射
 DEPARTMENT_MAPPING = {
-    "search_engine_journal": "SEO",
+    # 品牌
     "adweek": "品牌",
     "marketing_week": "品牌",
-    "social_media_today": "社媒运营",
-    "tiktok_business": "社媒运营",
-    "youtube_blog": "社媒运营",
+    # SEO
+    "search_engine_journal": "SEO",
+    # 广告投放
     "google_ads_blog": "广告投放",
     "meta_business": "广告投放",
+    # 用户洞察
+    "omnisend": "用户洞察",
+    "hootsuite": "用户洞察",
+    "brandwatch": "用户洞察",
+    # 竞品最新动态
+    "printful": "竞品最新动态",
+    # 社交媒体运营
+    "social_media_today": "社交媒体运营",
+    "tiktok_business": "社交媒体运营",
+    "youtube_blog": "社交媒体运营",
+    # 社媒热门内容（临时用 practical_ecommerce）
+    "practical_ecommerce": "社媒热门内容",
+    # 定制礼品最新行业趋势
+    "small_business_trends": "定制礼品最新行业趋势",
 }
 
 # 内容类型关键词
@@ -101,8 +123,12 @@ def generate_summary(title: str, content_type: str, department: str, source_name
     how_to_use_map = {
         "SEO": "可用于SEO策略优化、关键词研究、技术参考",
         "品牌": "可用于品牌建设、创意灵感、市场定位参考",
-        "社媒运营": "可用于社交媒体内容策划、平台运营策略借鉴",
         "广告投放": "可用于广告投放优化、预算分配、创意参考",
+        "用户洞察": "可用于用户行为分析、CRM优化、会员运营参考",
+        "竞品最新动态": "可用于竞品监控、市场分析、差异化策略参考",
+        "社交媒体运营": "可用于社交媒体内容策划、平台运营策略借鉴",
+        "社媒热门内容": "可用于内容选题、热点追踪、病毒传播规律参考",
+        "定制礼品最新行业趋势": "可用于选品决策、行业洞察、定制礼品趋势参考",
     }
     how_to_use = how_to_use_map.get(department, "可用于营销策划参考")
 
@@ -171,6 +197,12 @@ def parse_rss_source(source_key: str, source_url: str) -> list:
                 "youtube_blog": "YouTube Blog",
                 "google_ads_blog": "Google Ads Developer Blog",
                 "meta_business": "Meta Business",
+                "omnisend": "Omnisend",
+                "hootsuite": "Hootsuite",
+                "brandwatch": "Brandwatch",
+                "practical_ecommerce": "Practical Ecommerce",
+                "small_business_trends": "Small Business Trends",
+                "printful": "Printful",
             }
             source_name = source_name_map.get(source_key, source_key)
 
