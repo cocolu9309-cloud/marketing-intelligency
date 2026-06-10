@@ -41,10 +41,23 @@ jobs:
         with:
           hugo-version: '0.131.0'
 
+      - name: Debug environment
+        run: |
+          echo "=== pwd ==="
+          pwd
+          echo "=== marketing-intelligence ==="
+          ls -la marketing-intelligence/
+          echo "=== layouts ==="
+          ls -la marketing-intelligence/layouts/
+          echo "=== data ==="
+          ls -la marketing-intelligence/data/
+        working-directory: .
+
       - name: Build Hugo site
         run: |
-          rm -rf public
-          hugo --destination public
+          pwd
+          ls -la
+          hugo --destination public 2>&1
         working-directory: ./marketing-intelligence
 
       - name: Deploy to GitHub Pages
