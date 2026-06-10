@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  crawl-and-deploy:
+  build-and-commit:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -26,14 +26,15 @@ jobs:
         with:
           hugo-version: '0.131.0'
 
-      - name: Build
+      - name: Build to root
         run: |
-          rm -rf marketing-intelligence/public
-          hugo -d marketing-intelligence/public
-          ls -la marketing-intelligence/public/
+          hugo --destination .
+        working-directory: ./marketing-intelligence
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: marketing-intelligence/public
+      - name: Commit changes
+        run: |
+          git config user.name "Crawler"
+          git config user.email "crawler@github.com"
+          git add -A
+          git diff --staged --quiet || git commit -m "chore: auto update site content $(date '+%Y-%m-%d %H:%M')"
+          git push
