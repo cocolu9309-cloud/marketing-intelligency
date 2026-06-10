@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build-and-commit:
+  crawl-and-push:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -18,23 +18,16 @@ jobs:
       - name: Install deps
         run: pip install feedparser requests beautifulsoup4
 
-      - name: Crawl
+      - name: Crawl articles
         run: python marketing-intelligence/scripts/crawl.py
 
-      - name: Hugo
-        uses: peaceiris/actions-hugo@v3
-        with:
-          hugo-version: '0.131.0'
+      - name: Copy articles.json to docs
+        run: cp marketing-intelligence/data/articles.json docs/data/articles.json
 
-      - name: Build to root
-        run: |
-          hugo --destination .
-        working-directory: ./marketing-intelligence
-
-      - name: Commit changes
+      - name: Commit and push
         run: |
           git config user.name "Crawler"
           git config user.email "crawler@github.com"
-          git add -A
-          git diff --staged --quiet || git commit -m "chore: auto update site content $(date '+%Y-%m-%d %H:%M')"
+          git add docs/data/articles.json marketing-intelligence/data/articles.json
+          git diff --staged --quiet || git commit -m "chore: auto update articles $(date '+%Y-%m-%d %H:%M')"
           git push
