@@ -14,7 +14,7 @@ let currentFilters = {
  */
 async function loadArticles() {
     try {
-        const response = await fetch('/data/articles.json');
+        const response = await fetch('data/articles.json');
         if (!response.ok) throw new Error('Failed to load articles');
         allArticles = await response.json();
         updateLastUpdated();
