@@ -5,63 +5,35 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 1 * * *'  # 每天凌晨 1 点 UTC = 北京时间 9 点
-  workflow_dispatch:       # 手动触发
+    - cron: '0 1 * * *'
+  workflow_dispatch:
 
 jobs:
   crawl-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
+      - name: Install deps
+        run: pip install feedparser requests beautifulsoup4
 
-      - name: Install Python dependencies
-        run: |
-          pip install feedparser requests beautifulsoup4
-        working-directory: ./marketing-intelligence
+      - name: Crawl
+        run: python marketing-intelligence/scripts/crawl.py
 
-      - name: Run crawler
-        run: python scripts/crawl.py
-        working-directory: ./marketing-intelligence
-
-      - name: Generate Chinese summaries
-        run: python scripts/improve_summaries.py
-        working-directory: ./marketing-intelligence
-        continue-on-error: true
-        timeout-minutes: 20
-        if: false  # SKIP FOR NOW - uncomment after Hugo build verified
-
-      - name: Setup Hugo
+      - name: Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: '0.131.0'
 
-      - name: Debug environment
+      - name: Build
         run: |
-          echo "=== pwd ==="
-          pwd
-          echo "=== marketing-intelligence ==="
-          ls -la marketing-intelligence/
-          echo "=== layouts ==="
-          ls -la marketing-intelligence/layouts/
-          echo "=== data ==="
-          ls -la marketing-intelligence/data/
-        working-directory: .
+          rm -rf marketing-intelligence/public
+          hugo -d marketing-intelligence/public
+          ls -la marketing-intelligence/public/
 
-      - name: Build Hugo site
-        run: |
-          pwd
-          ls -la
-          hugo --destination public 2>&1
-        working-directory: ./marketing-intelligence
-
-      - name: Deploy to GitHub Pages
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          publish_dir: marketing-intelligence/public
