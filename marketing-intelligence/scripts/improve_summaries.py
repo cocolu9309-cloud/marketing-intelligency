@@ -107,7 +107,7 @@ def process_article(article):
         }
 
 def main():
-    input_path = Path(r"D:\工作\AI\claude-demo\marketing-intelligence\data\articles.json")
+    input_path = Path("data/articles.json")
     if not input_path.exists():
         print(f"[ERROR] File not found: {input_path}")
         return

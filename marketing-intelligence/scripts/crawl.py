@@ -317,7 +317,7 @@ def main():
     all_articles.sort(key=lambda x: x.get('published', ''), reverse=True)
 
     # 写入 JSON 文件
-    output_path = r"D:\工作\AI\claude-demo\marketing-intelligence\data\articles.json"
+    output_path = "data/articles.json"
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(all_articles, f, ensure_ascii=False, indent=2)
 
