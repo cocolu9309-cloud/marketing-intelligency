@@ -11,9 +11,6 @@ on:
 jobs:
   crawl-and-deploy:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./marketing-intelligence
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -26,12 +23,15 @@ jobs:
       - name: Install Python dependencies
         run: |
           pip install feedparser requests beautifulsoup4
+        working-directory: ./marketing-intelligence
 
       - name: Run crawler
         run: python scripts/crawl.py
+        working-directory: ./marketing-intelligence
 
       - name: Generate Chinese summaries
         run: python scripts/improve_summaries.py
+        working-directory: ./marketing-intelligence
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
@@ -42,6 +42,7 @@ jobs:
         run: |
           rm -rf public
           hugo --cleanDestinationDir --destination public
+        working-directory: ./marketing-intelligence
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
