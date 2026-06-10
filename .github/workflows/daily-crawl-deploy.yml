@@ -39,7 +39,9 @@ jobs:
           hugo-version: '0.131.0'
 
       - name: Build Hugo site
-        run: hugo --destination public
+        run: |
+          rm -rf public
+          hugo --cleanDestinationDir --destination public
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

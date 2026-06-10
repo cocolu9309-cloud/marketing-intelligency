@@ -1,0 +1,6 @@
+# Hugo build output
+marketing-intelligence/public/
+
+# OS files
+.DS_Store
+Thumbs.db
