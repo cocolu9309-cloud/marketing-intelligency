@@ -73,12 +73,12 @@ function filterArticles() {
 
         // 时间范围筛选
         if (currentFilters.timeRange !== 'all') {
-            const articleDate = parseDate(article.crawled_at);
+            const articleDate = parseDate(article.published || article.crawled_at);
             const now = new Date();
             const diffMs = now - articleDate;
             const diffDays = diffMs / (1000 * 60 * 60 * 24);
 
-            if (currentFilters.timeRange === 'today' && diffDays > 1) return false;
+            if (currentFilters.timeRange === 'today' && diffDays >= 1) return false;
             if (currentFilters.timeRange === 'week' && diffDays > 7) return false;
             if (currentFilters.timeRange === 'month' && diffDays > 30) return false;
         }
