@@ -34,6 +34,7 @@ jobs:
         working-directory: ./marketing-intelligence
         continue-on-error: true
         timeout-minutes: 20
+        if: false  # SKIP FOR NOW - uncomment after Hugo build verified
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
