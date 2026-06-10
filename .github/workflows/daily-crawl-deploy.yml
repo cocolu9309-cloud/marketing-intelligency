@@ -41,7 +41,7 @@ jobs:
       - name: Build Hugo site
         run: |
           rm -rf public
-          hugo --destinationDir public --gc --minify
+          hugo --destination public --gc --minify
         working-directory: ./marketing-intelligence
 
       - name: Deploy to GitHub Pages
