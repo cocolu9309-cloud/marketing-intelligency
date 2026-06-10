@@ -54,13 +54,94 @@
         </select>
     </div>
 
-    <main id="articlesContainer" class="articles-container">
-    </main>
+    <main id="articlesContainer" class="articles-container"></main>
 
     <footer class="footer">
         <p>callie.com 营销资讯中心 · 由 GitHub Actions 自动更新</p>
     </footer>
 
-    <script src="js/search.js"></script>
+<script>
+(function() {
+    var allArticles = [];
+    var currentFilters = { department: "all", contentType: "all", importance: "all", timeRange: "all", keyword: "" };
+
+    function parseDate(d) { return new Date(d); }
+
+    function getStars(imp) { var m = {"高":5,"中":3,"低":1}; return '★'.repeat(m[imp]||3) + '☆'.repeat(5-(m[imp]||3)); }
+
+    function filterArticles() {
+        return allArticles.filter(function(a) {
+            if (currentFilters.department !== 'all' && a.department !== currentFilters.department) return false;
+            if (currentFilters.contentType !== 'all' && a.content_type !== currentFilters.contentType) return false;
+            if (currentFilters.importance !== 'all' && a.importance !== currentFilters.importance) return false;
+            if (currentFilters.keyword) {
+                var kw = currentFilters.keyword.toLowerCase();
+                var text = (a.title||'') + ' ' + (a.title_cn||'') + ' ' + (a.one_sentence||'');
+                if (text.toLowerCase().indexOf(kw) === -1) return false;
+            }
+            return true;
+        });
+    }
+
+    function renderArticles() {
+        var filtered = filterArticles();
+        var container = document.getElementById('articlesContainer');
+        if (!filtered.length) { container.innerHTML = '<div class="empty-state">暂无符合条件的资讯</div>'; return; }
+        var html = filtered.map(function(a) {
+            var stars = getStars(a.importance);
+            var title = a.title_cn || a.title;
+            var origTitle = a.title_cn ? '<div class="article-original-title">原文: ' + a.title + '</div>' : '';
+            return '<div class="article-card"><div class="article-header"><span class="importance-stars">' + stars + '</span><h3 class="article-title"><a href="' + a.url + '" target="_blank">' + title + '</a></h3></div>' + origTitle + '<div class="article-meta"><span class="tag department-tag">' + (a.department||'') + '</span><span class="tag type-tag">' + (a.content_type||'') + '</span><span class="tag source-tag">' + (a.source_name||'') + '</span></div><div class="article-summary"><p><strong>一句话:</strong> ' + (a.one_sentence||'暂无') + '</p><p><strong>为什么重要:</strong> ' + (a.why_important||'暂无') + '</p><p><strong>怎么用:</strong> ' + (a.how_to_use||'暂无') + '</p></div><div class="article-footer"><a href="' + a.url + '" target="_blank" class="btn-read-more">查看原文</a></div></div>';
+        }).join('');
+        container.innerHTML = html;
+    }
+
+    function loadArticles() {
+        var urls = ['data/articles.json', '../data/articles.json', '/marketing-intelligency/data/articles.json', '/marketing-intelligency/docs/data/articles.json'];
+        var tryNext = function(i) {
+            if (i >= urls.length) {
+                document.getElementById('articlesContainer').innerHTML = '<div class="empty-state">加载失败，请刷新页面重试</div>';
+                return;
+            }
+            fetch(urls[i]).then(function(r) {
+                if (!r.ok) throw new Error('status ' + r.status);
+                return r.json();
+            }).then(function(data) {
+                allArticles = data;
+                renderArticles();
+            }).catch(function() { tryNext(i+1); });
+        };
+        tryNext(0);
+    }
+
+    document.querySelectorAll('.tab').forEach(function(tab) {
+        tab.addEventListener('click', function() {
+            document.querySelectorAll('.tab').forEach(function(t) { t.classList.remove('active'); });
+            tab.classList.add('active');
+            currentFilters.department = tab.dataset.department || 'all';
+            renderArticles();
+        });
+    });
+
+    document.getElementById('typeFilter').addEventListener('change', function(e) { currentFilters.contentType = e.target.value; renderArticles(); });
+    document.getElementById('importanceFilter').addEventListener('change', function(e) { currentFilters.importance = e.target.value; renderArticles(); });
+    document.getElementById('timeFilter').addEventListener('change', function(e) { currentFilters.timeRange = e.target.value; renderArticles(); });
+
+    var searchTimer;
+    document.getElementById('searchInput').addEventListener('input', function(e) {
+        clearTimeout(searchTimer);
+        searchTimer = setTimeout(function() {
+            currentFilters.keyword = e.target.value.trim();
+            renderArticles();
+        }, 300);
+    });
+    document.getElementById('searchBtn').addEventListener('click', function() {
+        currentFilters.keyword = document.getElementById('searchInput').value.trim();
+        renderArticles();
+    });
+
+    loadArticles();
+})();
+</script>
 </body>
 </html>
