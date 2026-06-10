@@ -5,7 +5,8 @@ let currentFilters = {
     contentType: "all",
     importance: "all",
     timeRange: "all",
-    keyword: ""
+    keyword: "",
+    source: "all"
 };
 
 /**
@@ -67,10 +68,7 @@ function filterArticles() {
 
         // 重要程度筛选
         if (currentFilters.importance !== 'all') {
-            const imp = parseInt(article.importance);
-            if (currentFilters.importance === 'high' && imp < 4) return false;
-            if (currentFilters.importance === 'medium' && (imp < 2 || imp >= 4)) return false;
-            if (currentFilters.importance === 'low' && imp >= 2) return false;
+            if (article.importance !== currentFilters.importance) return false;
         }
 
         // 时间范围筛选
@@ -114,7 +112,9 @@ function renderArticles() {
     }
 
     const html = filtered.map(article => {
-        const stars = '★'.repeat(article.importance) + '☆'.repeat(5 - article.importance);
+        // 重要性星级（高=5星，中=3星，低=1星）
+        const impMap = { "高": 5, "中": 3, "低": 1 };
+        const stars = '★'.repeat(impMap[article.importance] || 3) + '☆'.repeat(5 - (impMap[article.importance] || 3));
         const date = parseDate(article.crawled_at).toLocaleString('zh-CN', {
             year: 'numeric',
             month: 'long',
@@ -122,15 +122,18 @@ function renderArticles() {
             hour: '2-digit',
             minute: '2-digit'
         });
+        // 中文标题优先显示
+        const displayTitle = article.title_cn || article.title;
 
         return `
         <div class="article-card">
             <div class="article-header">
                 <span class="importance-stars">${stars}</span>
                 <h3 class="article-title">
-                    <a href="${article.url}" target="_blank">${article.title}</a>
+                    <a href="${article.url}" target="_blank">${displayTitle}</a>
                 </h3>
             </div>
+            ${article.title_cn ? `<div class="article-original-title">原文: ${article.title}</div>` : ''}
             <div class="article-meta">
                 <span class="tag department-tag">${article.department}</span>
                 <span class="tag type-tag">${article.content_type}</span>
@@ -138,7 +141,7 @@ function renderArticles() {
                 <span class="tag time-tag">${date}</span>
             </div>
             <div class="article-summary">
-                <p class="one-sentence"><strong>一句话:</strong> ${article.one_sentence_summary || '暂无'}</p>
+                <p class="one-sentence"><strong>一句话:</strong> ${article.one_sentence || '暂无'}</p>
                 <p class="why-important"><strong>为什么重要:</strong> ${article.why_important || '暂无'}</p>
                 <p class="how-to-use"><strong>怎么用:</strong> ${article.how_to_use || '暂无'}</p>
             </div>

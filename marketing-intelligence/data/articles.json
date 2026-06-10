@@ -1,6 +1,7 @@
 [
   {
     "title": "Google Says Hyphenated Domain Names Are Okay For SEO via @sejournal, @martinibuster",
+    "title_cn": "谷歌确认带连字符域名对SEO无负面影响",
     "source": "search_engine_journal",
     "source_name": "Search Engine Journal",
     "department": "SEO",
@@ -9,12 +10,13 @@
     "url": "https://www.searchenginejournal.com/google-says-hyphenated-domain-names-are-okay-for-seo/578390/",
     "published": "2026-06-08T23:43:54",
     "crawled_at": "2026-06-09T10:44:37.334455",
-    "one_sentence": "Google Says Hyphenated Domain ...",
-    "why_important": "来自Search Engine Journal的营销资讯",
-    "how_to_use": "可用于SEO策略优化、关键词研究、技术参考"
+    "one_sentence": "谷歌官方澄清带连字符的域名不会损害SEO效果。",
+    "why_important": "对于Callie.com等使用连字符域名的跨境电商，此结论可消除SEO顾虑，专注品牌推广。",
+    "how_to_use": "Callie.com可继续使用现有域名，无需因SEO担忧更换，同时优化其他排名因素提升搜索可见性。"
   },
   {
     "title": "AI Mentions May Not Translate To Trust, New Analysis Suggests via @sejournal, @MattGSouthern",
+    "title_cn": "新分析显示：AI提及未必能转化为信任",
     "source": "search_engine_journal",
     "source_name": "Search Engine Journal",
     "department": "SEO",
@@ -23,12 +25,13 @@
     "url": "https://www.searchenginejournal.com/ai-mentions-may-not-translate-to-trust-new-analysis-suggests/578388/",
     "published": "2026-06-08T23:23:57",
     "crawled_at": "2026-06-09T10:44:37.334565",
-    "one_sentence": "AI Mentions May Not Translate ...",
-    "why_important": "Search Engine Journal推荐的高效工具，提升工作效率",
-    "how_to_use": "可用于SEO策略优化、关键词研究、技术参考"
+    "one_sentence": "研究发现，品牌宣传中提及AI技术可能无法有效提升消费者信任度。",
+    "why_important": "对Callie.com而言，盲目强调AI技术可能适得其反，需更注重消费者真实需求与信任建设。",
+    "how_to_use": "在营销策略中，应结合用户反馈数据优化AI功能展示方式，突出实用性而非技术标签，例如在定制礼品页面增加案例展示而非单纯提及“AI设计”。"
   },
   {
     "title": "Just 5% of marketers expect AI to create new roles or opportunities",
+    "title_cn": "仅5%的营销人员预期AI将创造新岗位或机会",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -37,12 +40,13 @@
     "url": "https://www.marketingweek.com/marketers-ai-new-roles/",
     "published": "2026-06-08T23:01:51",
     "crawled_at": "2026-06-09T10:44:35.524867",
-    "one_sentence": "Just 5% of marketers expect AI...",
-    "why_important": "Marketing Week发布的数据报告，提供决策依据",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "绝大多数营销者对AI创造新职业机会持悲观态度。",
+    "why_important": "对Callie.com而言，需警惕AI工具替代人力风险，同时挖掘AI在定制化营销中的差异化应用。",
+    "how_to_use": "可优先将AI用于提升客服效率和个性化推荐，而非盲目扩编技术团队，聚焦AI辅助人类创意而非替代。"
   },
   {
     "title": "Fix Your KPI Blind Spots: How To Finally Tie AI Search To Performance via @sejournal, @hethr_campbell",
+    "title_cn": "修复KPI盲区：如何通过AI搜索关联实际绩效",
     "source": "search_engine_journal",
     "source_name": "Search Engine Journal",
     "department": "SEO",
@@ -51,12 +55,13 @@
     "url": "https://www.searchenginejournal.com/fix-your-kpi-blind-spots-how-to-finally-tie-ai-search-to-performance/578378/",
     "published": "2026-06-08T21:12:48",
     "crawled_at": "2026-06-09T10:44:37.334660",
-    "one_sentence": "Fix Your KPI Blind Spots: How ...",
-    "why_important": "Search Engine Journal提供的实操教程，适合学习参考",
-    "how_to_use": "可用于SEO策略优化、关键词研究、技术参考"
+    "one_sentence": "文章指导如何利用AI搜索数据优化关键绩效指标以提升营销效果。",
+    "why_important": "对Callie.com而言，精准追踪AI搜索行为能优化定制礼品投放策略，降低无效流量成本。",
+    "how_to_use": "通过分析AI搜索词报告，调整Callie.com的SEO内容和广告关键词，聚焦高转化意向客户群。"
   },
   {
     "title": "OpenAI Confidentially Files for IPO, Joining Anthropic in Race to Wall Street",
+    "title_cn": "OpenAI秘密提交IPO申请，与Anthropic共赴华尔街竞赛",
     "source": "adweek",
     "source_name": "Adweek",
     "department": "品牌",
@@ -65,12 +70,13 @@
     "url": "https://www.adweek.com/media/openai-confidentially-files-for-ipo-joining-anthropic-in-race-to-wall-street/",
     "published": "2026-06-08T18:56:19",
     "crawled_at": "2026-06-09T10:44:34.969099",
-    "one_sentence": "OpenAI Confidentially Files fo...",
-    "why_important": "来自Adweek的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "OpenAI紧随Anthropic启动IPO进程，科技巨头竞逐资本市场。",
+    "why_important": "营销人员需关注AI行业资本动态，把握技术红利为定制礼品跨境电商引流增效。",
+    "how_to_use": "结合AI上市热点策划“科技+定制”主题营销，例如推出AI设计工具联名款礼品，借势提升品牌科技感与话题度。"
   },
   {
     "title": "Through Visa Partnership, EA Sports FC Rides World Cup Wave Without Mentioning FIFA",
+    "title_cn": "EA体育FC借力Visa合作乘世界杯东风，绝口不提FIFA",
     "source": "adweek",
     "source_name": "Adweek",
     "department": "品牌",
@@ -79,12 +85,13 @@
     "url": "https://www.adweek.com/brand-marketing/through-visa-partnership-ea-sports-fc-rides-world-cup-wave-without-mentioning-fifa/",
     "published": "2026-06-08T14:22:29",
     "crawled_at": "2026-06-09T10:44:34.969182",
-    "one_sentence": "Through Visa Partnership, EA S...",
-    "why_important": "来自Adweek的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "EA体育FC通过与Visa合作巧妙利用世界杯热度，避免提及FIFA进行品牌营销。",
+    "why_important": "对于callie.com这类跨境电商，可学习如何借势大型赛事热点，同时规避版权风险提升品牌曝光。",
+    "how_to_use": "callie.com可借鉴此策略，在世界杯期间与支付平台合作推出定制礼品促销，既不侵权又能蹭热点引流。"
   },
   {
     "title": "Optimizing For Attention: How Eye Tracking Can Help Your International Strategy via @sejournal, @SequinsNsearch",
+    "title_cn": "优化注意力：眼动追踪如何助力国际营销策略",
     "source": "search_engine_journal",
     "source_name": "Search Engine Journal",
     "department": "SEO",
@@ -93,12 +100,13 @@
     "url": "https://www.searchenginejournal.com/how-eye-tracking-can-help-your-international-strategy/575206/",
     "published": "2026-06-08T14:00:52",
     "crawled_at": "2026-06-09T10:44:37.334764",
-    "one_sentence": "Optimizing For Attention: How ...",
-    "why_important": "来自Search Engine Journal的营销资讯",
-    "how_to_use": "可用于SEO策略优化、关键词研究、技术参考"
+    "one_sentence": "眼动追踪技术可帮助跨境电商优化广告和页面设计，提升用户注意力。",
+    "why_important": "对定制礼品跨境电商Callie.com而言，精准捕捉用户视觉焦点能显著提高转化率和广告ROI。",
+    "how_to_use": "通过眼动追踪数据优化Callie.com的产品展示页和广告素材，突出核心卖点，减少用户分心。"
   },
   {
     "title": "GEO, creator content, brand values: 5 interesting stats to start your week",
+    "title_cn": "地域、创作者内容与品牌价值：开启本周的5个有趣数据",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -107,12 +115,13 @@
     "url": "https://www.marketingweek.com/geo-creator-content-brand-values-5-interesting-stats-to-start-your-week/",
     "published": "2026-06-08T13:08:56",
     "crawled_at": "2026-06-09T10:44:35.524965",
-    "one_sentence": "GEO, creator content, brand va...",
-    "why_important": "来自Marketing Week的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "文章揭示了地域差异、创作者内容与品牌价值对营销效果的关键影响。",
+    "why_important": "对于Callie.com这类定制礼品跨境电商，这些数据能帮助精准定位市场并优化内容策略。",
+    "how_to_use": "Callie.com可依据地域数据调整广告投放，联合本地创作者推广定制礼品，强化品牌价值传播。"
   },
   {
     "title": "EXCLUSIVE: Kantar Hires Martina Suess Cromer As Its Top U.S. Marketer",
+    "title_cn": "独家：Kantar任命Martina Suess Cromer为美国首席营销官",
     "source": "adweek",
     "source_name": "Adweek",
     "department": "品牌",
@@ -121,12 +130,13 @@
     "url": "https://www.adweek.com/brand-marketing/exclusive-kantar-hires-martina-suess-cromer-as-its-top-us-marketer/",
     "published": "2026-06-08T12:16:43",
     "crawled_at": "2026-06-09T10:44:34.969224",
-    "one_sentence": "EXCLUSIVE: Kantar Hires Martin...",
-    "why_important": "Adweek发布的数据报告，提供决策依据",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "Kantar聘请Martina Suess Cromer担任美国市场负责人，强化营销战略。",
+    "why_important": "对定制礼品跨境电商Callie.com而言，关注顶级营销人才动向可借鉴其策略，提升品牌竞争力。",
+    "how_to_use": "Callie.com可分析Martina的市场策略，优化跨境营销团队结构，借鉴其经验制定更精准的本地化推广计划。"
   },
   {
     "title": "Google Ask Maps Updates – How They Impact Your Business Profile via @sejournal, @MattGSouthern",
+    "title_cn": "谷歌地图问答更新对商家档案的影响",
     "source": "search_engine_journal",
     "source_name": "Search Engine Journal",
     "department": "SEO",
@@ -135,12 +145,13 @@
     "url": "https://www.searchenginejournal.com/google-ask-maps-updates-how-they-impact-your-business-profile/577542/",
     "published": "2026-06-08T12:01:18",
     "crawled_at": "2026-06-09T10:44:37.334875",
-    "one_sentence": "Google Ask Maps Updates – How ...",
-    "why_important": "来自Search Engine Journal的营销资讯",
-    "how_to_use": "可用于SEO策略优化、关键词研究、技术参考"
+    "one_sentence": "谷歌地图新增问答功能将直接影响商家档案的可见性和客户互动。",
+    "why_important": "对于callie.com这类跨境电商，优化商家档案问答能提升本地搜索排名和客户信任度。",
+    "how_to_use": "callie.com可主动设置常见产品/物流问答，并监控用户提问及时回复，强化品牌专业形象。"
   },
   {
     "title": "EXCLUSIVE: Accenture Song Will Buy Whalar, Gaining Global Scale in Influencer Marketing",
+    "title_cn": "埃森哲互动收购Whalar，加码全球网红营销",
     "source": "adweek",
     "source_name": "Adweek",
     "department": "品牌",
@@ -149,12 +160,13 @@
     "url": "https://www.adweek.com/commerce/exclusive-accenture-song-will-buywhalar-gaining-global-scale-in-influencer-marketing/",
     "published": "2026-06-08T11:15:00",
     "crawled_at": "2026-06-09T10:44:34.969263",
-    "one_sentence": "EXCLUSIVE: Accenture Song Will...",
-    "why_important": "来自Adweek的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "埃森哲互动收购网红营销平台Whalar，强化全球影响力营销布局。",
+    "why_important": "此举标志网红营销规模化趋势，对Callie.com这类跨境品牌而言，可借力全球资源提升本土化种草效率。",
+    "how_to_use": "Callie.com可评估Whalar的网红数据库，筛选匹配目标市场的海外KOL，推动定制礼品在社交媒体的精准渗透。"
   },
   {
     "title": "Former Saga customer chief joins British Red Cross",
+    "title_cn": "前Saga客户主管加入英国红十字会",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -163,12 +175,13 @@
     "url": "https://www.marketingweek.com/british-red-cross-stuart-beamish/",
     "published": "2026-06-08T10:12:43",
     "crawled_at": "2026-06-09T10:44:35.525059",
-    "one_sentence": "Former Saga customer chief joi...",
-    "why_important": "来自Marketing Week的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "Saga前客户主管转任英国红十字会，助力其品牌发展。",
+    "why_important": "营销人员可关注高管流动带来的品牌策略变化，为Callie.com定制礼品跨境合作提供参考。",
+    "how_to_use": "借鉴英国红十字会的高管任用策略，Callie.com可考虑与有公益背景的营销人才合作，提升品牌社会责任感与影响力。"
   },
   {
     "title": "AI Visibility Used To Mean Citation. Late June 2026, It Starts To Mean Transaction via @sejournal, @slobodanmanic",
+    "title_cn": "AI可见性从被引用转向直接交易，2026年6月底启动",
     "source": "search_engine_journal",
     "source_name": "Search Engine Journal",
     "department": "SEO",
@@ -177,12 +190,13 @@
     "url": "https://www.searchenginejournal.com/ai-visibility-used-to-mean-citation-late-june-2026-it-starts-to-mean-transaction/574698/",
     "published": "2026-06-08T10:03:33",
     "crawled_at": "2026-06-09T10:44:37.334971",
-    "one_sentence": "AI Visibility Used To Mean Cit...",
-    "why_important": "来自Search Engine Journal的营销资讯",
-    "how_to_use": "可用于SEO策略优化、关键词研究、技术参考"
+    "one_sentence": "2026年6月起，AI可见性将直接影响跨境电商交易转化。",
+    "why_important": "对Callie.com而言，提前布局AI交易入口能抢占定制礼品市场先机，避免流量红利期落后。",
+    "how_to_use": "可优化产品页面的AI交互功能，例如嵌入实时定制推荐AI工具，直接引导用户完成购买决策。"
   },
   {
     "title": "Big News: WordPress Initiative Will Secure Plugins And Themes via @sejournal, @martinibuster",
+    "title_cn": "WordPress计划将保障插件与主题安全",
     "source": "search_engine_journal",
     "source_name": "Search Engine Journal",
     "department": "SEO",
@@ -191,12 +205,13 @@
     "url": "https://www.searchenginejournal.com/wordpress-announces-initiative-to-secure-all-plugins-and-themes/578189/",
     "published": "2026-06-08T10:03:25",
     "crawled_at": "2026-06-09T10:44:37.335068",
-    "one_sentence": "Big News: WordPress Initiative...",
-    "why_important": "来自Search Engine Journal的营销资讯",
-    "how_to_use": "可用于SEO策略优化、关键词研究、技术参考"
+    "one_sentence": "WordPress推出新计划以提升插件和主题的安全性。",
+    "why_important": "对定制礼品跨境电商Callie.com而言，安全的WordPress插件能保障网站稳定，避免因漏洞影响SEO和用户体验。",
+    "how_to_use": "Callie.com可优先采用通过安全认证的WordPress插件，提升网站可信度，同时通过博客宣传安全举措增强品牌形象。"
   },
   {
     "title": "‘Priming and proving’: How brands like Motorway are rethinking the funnel for AI",
+    "title_cn": "“铺垫与验证”：Motorway等品牌如何用AI重塑营销漏斗",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -205,12 +220,13 @@
     "url": "https://www.marketingweek.com/priming-proving-motorway-ai-strategy/",
     "published": "2026-06-08T06:57:45",
     "crawled_at": "2026-06-09T10:44:35.525153",
-    "one_sentence": "‘Priming and proving’: How bra...",
-    "why_important": "来自Marketing Week的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "品牌正利用AI重新设计营销漏斗，通过数据驱动优化消费者旅程。",
+    "why_important": "对callie.com而言，AI驱动的漏斗优化能提升定制礼品转化率，降低获客成本。",
+    "how_to_use": "callie.com可借鉴AI分层触达策略，在客户决策各阶段推送个性化内容，如定制提案、用户案例等。"
   },
   {
     "title": "Submissions Are Open for 2026 ADWEEK Experiential Awards",
+    "title_cn": "2026年ADWEEK体验大奖现已开放投稿",
     "source": "adweek",
     "source_name": "Adweek",
     "department": "品牌",
@@ -219,12 +235,13 @@
     "url": "https://www.adweek.com/creativity/submissions-are-open-for-2026-adweek-experiential-awards/",
     "published": "2026-06-08T06:33:37",
     "crawled_at": "2026-06-09T10:44:34.978002",
-    "one_sentence": "Submissions Are Open for 2026 ...",
-    "why_important": "来自Adweek的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "ADWEEK宣布2026年体验大奖开始接受品牌案例申报。",
+    "why_important": "该奖项是国际营销领域的重要标杆，获奖案例可为Callie.com定制礼品跨境电商提供创意灵感与品牌背书。",
+    "how_to_use": "Callie.com可参考获奖案例优化用户体验设计，同时策划参与未来奖项申报，提升品牌国际影响力与行业认可度。"
   },
   {
     "title": "Why Irn Bru is focusing on ‘inner strength and maverick bravery’ to connect with football fans",
+    "title_cn": "Irn Bru以“内在力量与特立独行”联结球迷",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -233,12 +250,13 @@
     "url": "https://www.marketingweek.com/inner-strength-irn-bru-football/",
     "published": "2026-06-08T06:30:51",
     "crawled_at": "2026-06-09T10:44:35.525240",
-    "one_sentence": "Why Irn Bru is focusing on ‘in...",
-    "why_important": "来自Marketing Week的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "Irn Bru通过强调内在力量和勇敢精神与足球粉丝建立情感共鸣。",
+    "why_important": "对于callie.com而言，借助情感营销可以增强品牌与体育爱好者的联系，提升定制礼品的文化附加值。",
+    "how_to_use": "callie.com可在足球主题定制礼品营销中融入类似的情感诉求，如设计体现“坚韧精神”的系列产品，配合赛事热点进行推广。"
   },
   {
     "title": "‘Temporary’ career compromises can last a lifetime",
+    "title_cn": "“临时”职业妥协可能影响一生",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -247,12 +265,13 @@
     "url": "https://www.marketingweek.com/career-compromises-motherhood/",
     "published": "2026-06-08T06:01:03",
     "crawled_at": "2026-06-09T10:44:35.525311",
-    "one_sentence": "‘Temporary’ career compromises...",
-    "why_important": "来自Marketing Week的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "职业中的暂时妥协可能演变为长期困境，影响个人发展。",
+    "why_important": "营销人员需关注员工职业满意度，避免人才流失影响品牌创新力，尤其对Callie.com这类需创意驱动的定制礼品跨境电商至关重要。",
+    "how_to_use": "Callie.com可通过内部职业发展规划和激励机制，减少员工妥协心理，提升团队创造力，从而优化产品设计和营销策略。"
   },
   {
     "title": "The Independent Names Chris Anthony Its President of North American Operations",
+    "title_cn": "《独立报》任命克里斯·安东尼为北美业务总裁",
     "source": "adweek",
     "source_name": "Adweek",
     "department": "品牌",
@@ -261,12 +280,13 @@
     "url": "https://www.adweek.com/media/the-independent-chris-anthony-president-operations/",
     "published": "2026-06-08T06:00:00",
     "crawled_at": "2026-06-09T10:44:34.978094",
-    "one_sentence": "The Independent Names Chris An...",
-    "why_important": "来自Adweek的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "克里斯·安东尼出任《独立报》北美业务总裁，将推动其北美市场战略。",
+    "why_important": "跨境电商营销人员需关注媒体高层变动，以把握潜在合作机会与市场趋势。",
+    "how_to_use": "Callie.com可借机与《独立报》北美团队接触，探索定制礼品品牌在北美市场的联合推广或内容合作。"
   },
   {
     "title": "The Trade Desk Executive Exodus: Who Left and Where They Went",
+    "title_cn": "The Trade Desk高管离职潮：人员动向追踪",
     "source": "adweek",
     "source_name": "Adweek",
     "department": "品牌",
@@ -275,12 +295,13 @@
     "url": "https://www.adweek.com/media/inside-the-trade-desk-executive-exodus-who-left-and-where-they-went/",
     "published": "2026-06-08T06:00:00",
     "crawled_at": "2026-06-09T10:44:34.978142",
-    "one_sentence": "The Trade Desk Executive Exodu...",
-    "why_important": "来自Adweek的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "多位The Trade Desk高管离职并加入竞争对手或创业，引发行业关注。",
+    "why_important": "跨境电商需关注高管流动背后的市场趋势变化，及时调整竞品分析和人才策略。",
+    "how_to_use": "Callie.com可借此分析竞争对手团队变动，针对性调整广告投放策略或挖角相关人才，强化程序化广告优势。"
   },
   {
     "title": "Marketing Week to host session with Professors Byron Sharp and Jenni Romaniuk at Cannes",
+    "title_cn": "Marketing Week将在戛纳举办Byron Sharp与Jenni Romaniuk教授专场",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -289,12 +310,13 @@
     "url": "https://www.marketingweek.com/byron-sharp-jenni-romaniuk-cannes/",
     "published": "2026-06-08T05:54:13",
     "crawled_at": "2026-06-09T10:44:35.525383",
-    "one_sentence": "Marketing Week to host session...",
-    "why_important": "来自Marketing Week的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "两位营销学权威将在戛纳分享品牌增长前沿见解。",
+    "why_important": "对定制礼品跨境电商而言，掌握品牌科学理论能有效提升跨文化市场渗透率。",
+    "how_to_use": "Callie.com可借鉴其品牌资产建设方法论，优化独立站内容营销与社交媒体触达策略。"
   },
   {
     "title": "‘Prioritising human selling’: QVC on its recipe for social commerce success",
+    "title_cn": "“以人为本的销售”：QVC谈社交电商成功之道",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -303,12 +325,13 @@
     "url": "https://www.marketingweek.com/qvc-social-commerce-tiktok/",
     "published": "2026-06-07T23:01:25",
     "crawled_at": "2026-06-09T10:44:35.525455",
-    "one_sentence": "‘Prioritising human selling’: ...",
-    "why_important": "来自Marketing Week的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "QVC通过强调人性化销售在社交电商中取得成功。",
+    "why_important": "对Callie.com而言，人性化互动能提升定制礼品的情感价值，增强用户粘性和转化率。",
+    "how_to_use": "Callie.com可借鉴QVC策略，在直播或社交平台中融入故事化销售，突出定制礼品的个性化与情感连接。"
   },
   {
     "title": "Here are the Cable News Ratings for May 2026",
+    "title_cn": "2026年5月有线新闻收视率排行榜",
     "source": "adweek",
     "source_name": "Adweek",
     "department": "品牌",
@@ -317,12 +340,13 @@
     "url": "https://www.adweek.com/tvnewser/here-are-the-cable-news-ratings-for-may-2026/",
     "published": "2026-06-07T18:25:39",
     "crawled_at": "2026-06-09T10:44:34.978175",
-    "one_sentence": "Here are the Cable News Rating...",
-    "why_important": "来自Adweek的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "文章公布了2026年5月美国有线新闻频道的收视率排名情况。",
+    "why_important": "收视率数据反映观众偏好，可帮助Callie.com定制礼品跨境电商精准投放广告，选择高曝光媒体渠道。",
+    "how_to_use": "Callie.com可参考收视率排名，在高收视新闻频道投放广告或合作植入，触达更多潜在中高端礼品消费者。"
   },
   {
     "title": "What SEOs Should Read Before Labor Day, 5 Books For A Transformative Summer via @sejournal, @gregjarboe",
+    "title_cn": "劳动节前SEO人员必读：5本改变夏季的书籍",
     "source": "search_engine_journal",
     "source_name": "Search Engine Journal",
     "department": "SEO",
@@ -331,12 +355,13 @@
     "url": "https://www.searchenginejournal.com/what-seos-should-read-before-labor-day-4-books-for-a-transformative-summer/577681/",
     "published": "2026-06-07T12:02:53",
     "crawled_at": "2026-06-09T10:44:37.335174",
-    "one_sentence": "What SEOs Should Read Before L...",
-    "why_important": "来自Search Engine Journal的营销资讯",
-    "how_to_use": "可用于SEO策略优化、关键词研究、技术参考"
+    "one_sentence": "文章推荐5本适合SEO人员在夏季阅读的转型书籍。",
+    "why_important": "定制礼品跨境电商需持续优化SEO策略，这些书籍能帮助营销人员提升技能，适应市场变化。",
+    "how_to_use": "Callie.com团队可挑选书中推荐的SEO技巧，应用于网站内容优化和关键词策略，提升自然流量和转化率。"
   },
   {
     "title": "Google’s New Guidance Claims Authority Over SEO, Tools, And AEO/GEO via @sejournal, @martinibuster",
+    "title_cn": "谷歌新指南宣示对SEO、工具及AEO/GEO的权威控制",
     "source": "search_engine_journal",
     "source_name": "Search Engine Journal",
     "department": "SEO",
@@ -345,12 +370,13 @@
     "url": "https://www.searchenginejournal.com/googles-new-guidance-claims-authority-over-seo-tools-and-aeo-geo/578162/",
     "published": "2026-06-07T09:09:04",
     "crawled_at": "2026-06-09T10:44:37.335289",
-    "one_sentence": "Google’s New Guidance Claims A...",
-    "why_important": "Search Engine Journal推荐的高效工具，提升工作效率",
-    "how_to_use": "可用于SEO策略优化、关键词研究、技术参考"
+    "one_sentence": "谷歌更新指南强调其对SEO工具及广告扩展的管控权，影响搜索排名规则。",
+    "why_important": "对于Callie.com这类依赖谷歌流量的跨境商家，新规可能改变广告投放和自然搜索策略，需及时调整以维持曝光。",
+    "how_to_use": "Callie.com应审核现有SEO工具兼容性，优化AEO广告素材，并优先适配谷歌新规以提升商品页面的搜索可见性。"
   },
   {
     "title": "EXCLUSIVE: The Trade Desk CRO Anders Mortensen Out After 7 Months",
+    "title_cn": "独家：The Trade Desk首席营收官Anders Mortensen上任7个月后离职",
     "source": "adweek",
     "source_name": "Adweek",
     "department": "品牌",
@@ -359,12 +385,13 @@
     "url": "https://www.adweek.com/media/exclusive-the-trade-desk-cro-anders-mortensen-out-after-7-months/",
     "published": "2026-06-07T05:20:47",
     "crawled_at": "2026-06-09T10:44:34.978213",
-    "one_sentence": "EXCLUSIVE: The Trade Desk CRO ...",
-    "why_important": "来自Adweek的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "The Trade Desk首席营收官Anders Mortensen在任职7个月后突然离职。",
+    "why_important": "营销人员需关注高管变动对广告技术行业的影响，可能影响跨境电商的广告投放策略。",
+    "how_to_use": "Callie.com可借此机会评估与The Trade Desk的合作稳定性，并探索多元化的广告技术合作伙伴以降低风险。"
   },
   {
     "title": "Google Gives Sites AI Search Opt-Out, But Not The Data To Use It via @sejournal, @MattGSouthern",
+    "title_cn": "谷歌允许网站退出AI搜索，但未提供使用数据",
     "source": "search_engine_journal",
     "source_name": "Search Engine Journal",
     "department": "SEO",
@@ -373,12 +400,13 @@
     "url": "https://www.searchenginejournal.com/google-gives-sites-ai-search-opt-out-but-not-the-data-to-use-it/577978/",
     "published": "2026-06-06T13:31:25",
     "crawled_at": "2026-06-09T10:44:37.335388",
-    "one_sentence": "Google Gives Sites AI Search O...",
-    "why_important": "Search Engine Journal发布的数据报告，提供决策依据",
-    "how_to_use": "可用于SEO策略优化、关键词研究、技术参考"
+    "one_sentence": "谷歌推出网站退出AI搜索功能，但未共享相关数据。",
+    "why_important": "对于Callie.com等跨境电商，需关注AI搜索对SEO的影响以优化产品曝光。",
+    "how_to_use": "Callie.com可评估是否退出AI搜索，同时加强传统SEO策略，确保礼品关键词在搜索结果中的排名。"
   },
   {
     "title": "Your Next AI Visitor Will Know Who Sent It via @sejournal, @slobodanmanic",
+    "title_cn": "下一位AI访客将知悉推荐来源",
     "source": "search_engine_journal",
     "source_name": "Search Engine Journal",
     "department": "SEO",
@@ -387,12 +415,13 @@
     "url": "https://www.searchenginejournal.com/your-next-ai-visitor-will-know-who-sent-it/575489/",
     "published": "2026-06-06T12:00:26",
     "crawled_at": "2026-06-09T10:44:37.335485",
-    "one_sentence": "Your Next AI Visitor Will Know...",
-    "why_important": "Search Engine Journal发布的数据报告，提供决策依据",
-    "how_to_use": "可用于SEO策略优化、关键词研究、技术参考"
+    "one_sentence": "AI访客能识别流量来源，影响SEO策略效果评估。",
+    "why_important": "对定制礼品跨境电商而言，精准追踪AI流量来源可优化广告投放与渠道合作。",
+    "how_to_use": "Callie.com可通过分析AI推荐数据，调整SEO关键词和联盟营销策略，提升高转化渠道的预算占比。"
   },
   {
     "title": "Google’s Updated Guidance Urges FTC Complaints Against Shady SEOs via @sejournal, @martinibuster",
+    "title_cn": "谷歌更新指南：呼吁通过FTC投诉打击不良SEO行为",
     "source": "search_engine_journal",
     "source_name": "Search Engine Journal",
     "department": "SEO",
@@ -401,12 +430,13 @@
     "url": "https://www.searchenginejournal.com/googles-updated-guidance-urges-ftc-complaints-against-shady-seos/578151/",
     "published": "2026-06-06T07:18:58",
     "crawled_at": "2026-06-09T10:44:37.335594",
-    "one_sentence": "Google’s Updated Guidance Urge...",
-    "why_important": "Search Engine Journal推荐的高效工具，提升工作效率",
-    "how_to_use": "可用于SEO策略优化、关键词研究、技术参考"
+    "one_sentence": "谷歌建议受不良SEO影响的商家向FTC投诉以维护权益。",
+    "why_important": "对于Callie.com等跨境电商，避免SEO欺诈可保护品牌声誉并提升自然搜索流量。",
+    "how_to_use": "Callie.com可监控竞争对手是否使用违规SEO手段，发现后参考指南向FTC举报，同时优化自身白帽SEO策略。"
   },
   {
     "title": "The power of humour and declining influence: Your Marketing Week",
+    "title_cn": "幽默的力量与影响力衰退：你的营销周",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -415,12 +445,13 @@
     "url": "https://www.marketingweek.com/humour-influence-your-marketing-week/",
     "published": "2026-06-05T15:00:34",
     "crawled_at": "2026-06-09T10:44:35.525529",
-    "one_sentence": "The power of humour and declin...",
-    "why_important": "来自Marketing Week的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "幽默能提升营销效果，但需注意其影响力可能随使用频率下降。",
+    "why_important": "对callie.com而言，幽默营销能吸引跨境消费者，但过度使用可能削弱品牌独特性。",
+    "how_to_use": "在callie.com的社交媒体和广告中适度加入幽默元素，同时定期更新创意以保持新鲜感。"
   },
   {
     "title": "Google Analytics Is Adding Google Business Profile Data via @sejournal, @MattGSouthern",
+    "title_cn": "Google Analytics将整合Google商家资料数据",
     "source": "search_engine_journal",
     "source_name": "Search Engine Journal",
     "department": "SEO",
@@ -429,12 +460,13 @@
     "url": "https://www.searchenginejournal.com/google-analytics-is-adding-google-business-profile-data/578107/",
     "published": "2026-06-05T14:57:11",
     "crawled_at": "2026-06-09T10:44:37.335684",
-    "one_sentence": "Google Analytics Is Adding Goo...",
-    "why_important": "Search Engine Journal发布的数据报告，提供决策依据",
-    "how_to_use": "可用于SEO策略优化、关键词研究、技术参考"
+    "one_sentence": "Google Analytics新增商家资料数据功能，助力企业分析本地搜索表现。",
+    "why_important": "对于Callie.com这类跨境电商，整合数据可优化本地化营销策略，提升定制礼品在目标市场的曝光。",
+    "how_to_use": "Callie.com可通过该功能追踪各国店铺页面的搜索流量和用户行为，针对性调整SEO和广告投放策略。"
   },
   {
     "title": "5 Questions For…CNN’s Clarissa Ward Reporting from the Epicenter of the Ebola Outbreak",
+    "title_cn": "CNN记者克拉丽莎·沃德埃博拉疫情中心报道五问",
     "source": "adweek",
     "source_name": "Adweek",
     "department": "品牌",
@@ -443,12 +475,13 @@
     "url": "https://www.adweek.com/tvnewser/5-questions-forcnns-clarissa-ward-reporting-from-the-epicenter-of-the-ebola-outbreak/",
     "published": "2026-06-05T14:23:31",
     "crawled_at": "2026-06-09T10:44:34.978249",
-    "one_sentence": "5 Questions For…CNN’s Clarissa...",
-    "why_important": "Adweek发布的数据报告，提供决策依据",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "文章探讨CNN记者在埃博拉疫情中心的报道经历与挑战。",
+    "why_important": "营销人员可借鉴其危机传播策略，提升Callie.com在突发公共事件中的品牌响应能力。",
+    "how_to_use": "结合疫情相关社会热点，策划定制礼品公益营销活动，传递品牌人文关怀，增强用户情感联结。"
   },
   {
     "title": "AI Literacy Is Not Prompt Literacy. Ann Handley Says It’s Judgment Literacy via @sejournal, @gregjarboe",
+    "title_cn": "AI素养不等于指令素养，Ann Handley认为应是判断力素养",
     "source": "search_engine_journal",
     "source_name": "Search Engine Journal",
     "department": "SEO",
@@ -457,12 +490,13 @@
     "url": "https://www.searchenginejournal.com/ai-literacy-is-not-prompt-literacy-ann-handley-says-its-judgment-literacy/577322/",
     "published": "2026-06-05T14:00:29",
     "crawled_at": "2026-06-09T10:44:37.335801",
-    "one_sentence": "AI Literacy Is Not Prompt Lite...",
-    "why_important": "来自Search Engine Journal的营销资讯",
-    "how_to_use": "可用于SEO策略优化、关键词研究、技术参考"
+    "one_sentence": "文章强调真正的AI素养在于培养批判性判断力，而非仅掌握指令技巧。",
+    "why_important": "对于定制礼品跨境电商callie.com，精准判断AI工具的输出质量能避免营销内容同质化，提升品牌独特性。",
+    "how_to_use": "callie.com可通过建立AI内容评估流程，训练团队识别并优化AI生成的营销文案，确保内容既高效又贴合品牌调性。"
   },
   {
     "title": "Google Tests AI Search Data, UK Requires Opt Out – SEO Pulse via @sejournal, @MattGSouthern",
+    "title_cn": "谷歌测试AI搜索数据，英国要求退出机制",
     "source": "search_engine_journal",
     "source_name": "Search Engine Journal",
     "department": "SEO",
@@ -471,12 +505,13 @@
     "url": "https://www.searchenginejournal.com/seo-pulse-google-tests-ai-search-data-uk-requires-opt-out/578003/",
     "published": "2026-06-05T12:30:34",
     "crawled_at": "2026-06-09T10:44:37.335906",
-    "one_sentence": "Google Tests AI Search Data, U...",
-    "why_important": "Search Engine Journal发布的数据报告，提供决策依据",
-    "how_to_use": "可用于SEO策略优化、关键词研究、技术参考"
+    "one_sentence": "谷歌正测试AI驱动的搜索数据收集，英国要求提供退出选项。",
+    "why_important": "定制礼品跨境电商需关注AI搜索数据变化，以优化广告投放和SEO策略。",
+    "how_to_use": "Callie.com可监测英国用户搜索行为变化，调整AI广告关键词，同时确保合规提供数据退出选项。"
   },
   {
     "title": "Google’s Sergey Brin Sees A Path To AGI But Not Beyond It via @sejournal, @martinibuster",
+    "title_cn": "谷歌谢尔盖·布林认为AGI可实现但无法超越",
     "source": "search_engine_journal",
     "source_name": "Search Engine Journal",
     "department": "SEO",
@@ -485,12 +520,13 @@
     "url": "https://www.searchenginejournal.com/googles-sergey-brin-sees-a-path-to-agi/578068/",
     "published": "2026-06-05T12:10:04",
     "crawled_at": "2026-06-09T10:44:37.336007",
-    "one_sentence": "Google’s Sergey Brin Sees A Pa...",
-    "why_important": "来自Search Engine Journal的营销资讯",
-    "how_to_use": "可用于SEO策略优化、关键词研究、技术参考"
+    "one_sentence": "谷歌联合创始人认为通用人工智能可实现，但无法超越人类智能。",
+    "why_important": "定制礼品跨境电商需关注AGI发展，以提前布局AI客服、个性化推荐等营销场景。",
+    "how_to_use": "Callie.com可研究AGI技术趋势，优化AI驱动的定制化营销工具，提升客户体验和转化率。"
   },
   {
     "title": "What Is A Migration Hangover Traffic Drop & How Do You Avoid It?",
+    "title_cn": "什么是迁移宿醉流量下滑及如何避免",
     "source": "search_engine_journal",
     "source_name": "Search Engine Journal",
     "department": "SEO",
@@ -499,12 +535,13 @@
     "url": "https://www.searchenginejournal.com/what-is-a-migration-hangover-traffic-drop-how-do-you-avoid-it/575102/",
     "published": "2026-06-05T10:00:34",
     "crawled_at": "2026-06-09T10:44:37.336107",
-    "one_sentence": "What Is A Migration Hangover T...",
-    "why_important": "来自Search Engine Journal的营销资讯",
-    "how_to_use": "可用于SEO策略优化、关键词研究、技术参考"
+    "one_sentence": "网站迁移后流量下滑是常见问题，需通过预检和监控策略规避风险。",
+    "why_important": "对callie.com等跨境电商而言，流量下滑直接影响转化率，需提前预防以稳定旺季销售。",
+    "how_to_use": "在callie.com改版或更换域名时，应提前规划301重定向、保留旧站结构和持续监测关键词排名变化。"
   },
   {
     "title": "Marketing Week Awards deadline extended to 10 June",
+    "title_cn": "营销周奖项截止日期延至6月10日",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -513,12 +550,13 @@
     "url": "https://www.marketingweek.com/awards-deadline-extended-10-june/",
     "published": "2026-06-05T06:00:54",
     "crawled_at": "2026-06-09T10:44:35.525595",
-    "one_sentence": "Marketing Week Awards deadline...",
-    "why_important": "来自Marketing Week的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "营销周奖项申报截止日期延长至6月10日。",
+    "why_important": "对Callie.com而言，参与国际奖项可提升品牌知名度，助力跨境市场拓展。",
+    "how_to_use": "Callie.com可借此机会申报“最佳跨境营销案例”，通过奖项背书增强消费者信任并吸引潜在合作伙伴。"
   },
   {
     "title": "It’s time to close marketing’s power gap",
+    "title_cn": "是时候缩小营销的\"权力差距\"了",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -527,12 +565,13 @@
     "url": "https://www.marketingweek.com/marketings-power-gap/",
     "published": "2026-06-05T06:00:46",
     "crawled_at": "2026-06-09T10:44:35.525656",
-    "one_sentence": "It’s time to close marketing’s...",
-    "why_important": "来自Marketing Week的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "营销部门需在企业中获得更大决策权以驱动业务增长。",
+    "why_important": "对定制礼品跨境电商Callie.com而言，营销话语权不足将导致难以精准触达海外个性化需求。",
+    "how_to_use": "Callie.com可建立营销数据中台，用消费者洞察直接指导产品开发，提升营销部门在跨境业务链中的决策地位。"
   },
   {
     "title": "How many marketers actually have influence over price?",
+    "title_cn": "多少营销人员真正拥有定价影响力？",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -541,12 +580,13 @@
     "url": "https://www.marketingweek.com/marketers-influence-over-pricing/",
     "published": "2026-06-05T05:46:02",
     "crawled_at": "2026-06-09T10:44:35.525716",
-    "one_sentence": "How many marketers actually ha...",
-    "why_important": "来自Marketing Week的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "多数营销人员对产品定价缺乏实际决策权，但定价策略对品牌竞争力至关重要。",
+    "why_important": "对于Callie.com这类定制礼品跨境电商，定价直接影响利润率和市场定位，需营销与财务团队协同决策。",
+    "how_to_use": "Callie.com可通过调研客户价格敏感度，结合营销数据向管理层提出动态定价建议，提升促销活动ROI。"
   },
   {
     "title": "Google’s May Core Update Favored Pages That Match Intent via @sejournal, @MattGSouthern",
+    "title_cn": "谷歌五月核心更新更青睐符合用户意图的网页",
     "source": "search_engine_journal",
     "source_name": "Search Engine Journal",
     "department": "SEO",
@@ -555,12 +595,13 @@
     "url": "https://www.searchenginejournal.com/googles-may-core-update-favored-pages-that-match-intent/577996/",
     "published": "2026-06-05T02:43:01",
     "crawled_at": "2026-06-09T10:44:37.336215",
-    "one_sentence": "Google’s May Core Update Favor...",
-    "why_important": "Search Engine Journal发布的数据报告，提供决策依据",
-    "how_to_use": "可用于SEO策略优化、关键词研究、技术参考"
+    "one_sentence": "谷歌五月算法更新提升了符合搜索意图的网页排名。",
+    "why_important": "定制礼品跨境电商需精准匹配用户搜索意图，提升自然流量和转化率。",
+    "how_to_use": "优化Callie.com产品页内容和结构，确保与目标用户搜索意图高度匹配，以提高谷歌排名和点击率。"
   },
   {
     "title": "Why Royal London is repositioning to turn ‘record brand love’ into action",
+    "title_cn": "皇家伦敦品牌重塑：将“创纪录品牌热爱”转化为行动",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -569,12 +610,13 @@
     "url": "https://www.marketingweek.com/royal-london-repositioning/",
     "published": "2026-06-04T23:01:17",
     "crawled_at": "2026-06-09T10:44:35.525781",
-    "one_sentence": "Why Royal London is reposition...",
-    "why_important": "来自Marketing Week的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "皇家伦敦通过品牌重塑，将高品牌热爱度转化为实际购买行为。",
+    "why_important": "对于callie.com这类定制礼品跨境电商，将用户情感联结转化为销售是提升复购率的关键。",
+    "how_to_use": "callie.com可借鉴其策略，在社交媒体营销中强化情感共鸣，并设计限时活动推动用户从“喜爱”到“下单”。"
   },
   {
     "title": "Google Launches Search Profiles, Here’s How You Can Get One via @sejournal, @MattGSouthern",
+    "title_cn": "谷歌推出搜索个人资料，以下是获取方法",
     "source": "search_engine_journal",
     "source_name": "Search Engine Journal",
     "department": "SEO",
@@ -583,12 +625,13 @@
     "url": "https://www.searchenginejournal.com/google-launches-search-profiles-for-creators-with-100k-followers/577983/",
     "published": "2026-06-04T18:00:04",
     "crawled_at": "2026-06-09T10:44:37.336318",
-    "one_sentence": "Google Launches Search Profile...",
-    "why_important": "来自Search Engine Journal的营销资讯",
-    "how_to_use": "可用于SEO策略优化、关键词研究、技术参考"
+    "one_sentence": "谷歌新功能允许用户创建专属搜索个人资料，优化个性化体验。",
+    "why_important": "对Callie.com而言，借此可更精准触达目标客户，提升定制礼品跨境营销的个性化推荐效果。",
+    "how_to_use": "Callie.com可利用此功能分析用户搜索偏好，优化广告投放和产品推荐，增强客户互动与转化率。"
   },
   {
     "title": "Google Must Let Websites Opt Out Of AI Search Features In UK via @sejournal, @MattGSouthern",
+    "title_cn": "谷歌在英国须允许网站退出AI搜索功能",
     "source": "search_engine_journal",
     "source_name": "Search Engine Journal",
     "department": "SEO",
@@ -597,12 +640,13 @@
     "url": "https://www.searchenginejournal.com/google-must-let-websites-opt-out-of-ai-search-features-in-uk/577970/",
     "published": "2026-06-04T14:13:17",
     "crawled_at": "2026-06-09T10:44:37.336412",
-    "one_sentence": "Google Must Let Websites Opt O...",
-    "why_important": "来自Search Engine Journal的营销资讯",
-    "how_to_use": "可用于SEO策略优化、关键词研究、技术参考"
+    "one_sentence": "英国要求谷歌提供退出AI搜索展示的选项，可能影响网站流量。",
+    "why_important": "对于callie.com等跨境电商，需关注流量变动，调整SEO策略以应对AI搜索带来的曝光变化。",
+    "how_to_use": "callie.com可评估是否参与谷歌AI搜索展示，同时优化独立站内容和广告投放，平衡自然流量与AI推荐的影响。"
   },
   {
     "title": "‘Aligned on goals’: How Motorway brought the business together to drive record awareness",
+    "title_cn": "“目标一致”：Motorway如何团结业务推动创纪录的品牌认知",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -611,12 +655,13 @@
     "url": "https://www.marketingweek.com/motorway-awareness-goals-marketing/",
     "published": "2026-06-04T10:26:46",
     "crawled_at": "2026-06-09T10:44:35.525853",
-    "one_sentence": "‘Aligned on goals’: How Motorw...",
-    "why_important": "Marketing Week推荐的高效工具，提升工作效率",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "Motorway通过跨部门协作实现品牌认知的显著提升。",
+    "why_important": "对于callie.com这类跨境电商，统一目标能增强团队协作，提升营销效率，助力品牌全球化。",
+    "how_to_use": "callie.com可借鉴Motorway的协作模式，整合市场、销售和产品团队资源，制定统一的品牌传播策略，强化海外用户认知。"
   },
   {
     "title": "CX50 2026: The top 50 names in customer experience",
+    "title_cn": "CX50 2026：客户体验领域50强榜单",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -625,12 +670,13 @@
     "url": "https://www.marketingweek.com/cx50-2026-the-top-50-names-in-customer-experience/",
     "published": "2026-06-04T09:07:54",
     "crawled_at": "2026-06-09T10:44:35.525924",
-    "one_sentence": "CX50 2026: The top 50 names in...",
-    "why_important": "来自Marketing Week的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "文章揭晓了2026年客户体验领域的50家领先企业名单。",
+    "why_important": "对Callie.com而言，学习这些企业的客户体验策略可提升跨境定制礼品服务的竞争力。",
+    "how_to_use": "Callie.com可分析榜单中企业的客户体验创新点，优化网站交互、物流和个性化服务，增强用户粘性。"
   },
   {
     "title": "The Marketing Week Podcast: Nationwide and Mother on building a celebrated brand",
+    "title_cn": "《营销周刊播客：Nationwide与Mother谈如何打造备受赞誉的品牌》",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -639,12 +685,13 @@
     "url": "https://www.marketingweek.com/marketing-week-podcast-nationwide-mother-relationship/",
     "published": "2026-06-04T06:30:39",
     "crawled_at": "2026-06-09T10:44:35.525989",
-    "one_sentence": "The Marketing Week Podcast: Na...",
-    "why_important": "Marketing Week提供的实操教程，适合学习参考",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "Nationwide与Mother分享通过情感共鸣和长期策略塑造成功品牌的经验。",
+    "why_important": "对于callie.com这类定制礼品跨境电商，打造情感化品牌能提升用户忠诚度和差异化竞争力。",
+    "how_to_use": "callie.com可借鉴其策略，通过讲述定制礼品背后的用户故事与品牌价值观，强化情感连接与品牌记忆点。"
   },
   {
     "title": "Smash the silos between creator spend and media budget",
+    "title_cn": "打破创作者支出与媒体预算间的壁垒",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -653,12 +700,13 @@
     "url": "https://www.marketingweek.com/influencers-paid-organic-media/",
     "published": "2026-06-04T06:00:56",
     "crawled_at": "2026-06-09T10:44:35.526055",
-    "one_sentence": "Smash the silos between creato...",
-    "why_important": "来自Marketing Week的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "品牌需整合创作者营销与媒体预算以提升投放效率。",
+    "why_important": "对于Callie.com这类定制礼品跨境电商，融合两类预算能更精准触达目标受众，降低获客成本。",
+    "how_to_use": "Callie.com可建立跨部门协作机制，将KOL内容创作费用纳入整体媒体预算规划，实现数据共享与效果追踪。"
   },
   {
     "title": "‘Not a zero-sum game’: Inside WACL’s mission to unlock male allyship",
+    "title_cn": "“非零和游戏”：WACL解锁男性盟友使命内幕",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -667,12 +715,13 @@
     "url": "https://www.marketingweek.com/wacls-male-allyship-equality/",
     "published": "2026-06-04T06:00:53",
     "crawled_at": "2026-06-09T10:44:35.526141",
-    "one_sentence": "‘Not a zero-sum game’: Inside ...",
-    "why_important": "来自Marketing Week的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "WACL致力于推动男性成为性别平等的盟友，促进职场多元共融。",
+    "why_important": "跨境电商需关注多元文化，男性盟友的支持能提升品牌包容形象，吸引更广泛受众。",
+    "how_to_use": ""
   },
   {
     "title": "Conversations 2026: Introducing Meta Business Agent",
+    "title_cn": "对话2026：Meta商务智能助手面世",
     "source": "meta_business",
     "source_name": "Meta Business",
     "department": "广告投放",
@@ -681,12 +730,13 @@
     "url": "https://zh-cn.facebook.com/business/news/conversations-2026-introducing-meta-business-agent",
     "published": "2026-06-03T13:40:09",
     "crawled_at": "2026-06-09T10:44:44.526859",
-    "one_sentence": "Conversations 2026: Introducin...",
-    "why_important": "来自Meta Business的营销资讯",
-    "how_to_use": "可用于广告投放优化、预算分配、创意参考"
+    "one_sentence": "Meta推出AI商务助手，助力企业自动化广告投放与客户沟通。",
+    "why_important": "对定制礼品跨境电商Callie.com而言，该助手能提升广告效率并降低多语言客服成本。",
+    "how_to_use": "Callie.com可借助该工具自动优化欧美市场广告投放，同时用AI即时响应客户询盘，提升转化率。"
   },
   {
     "title": "The Week in Tech: Apple looks set to fold and less RAM for your buck",
+    "title_cn": "一周科技动态：苹果或将推出折叠屏，内存性价比下降",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -695,12 +745,13 @@
     "url": "https://www.marketingweek.com/week-in-tech-apple-phone-ram/",
     "published": "2026-06-03T12:32:31",
     "crawled_at": "2026-06-09T10:44:35.526217",
-    "one_sentence": "The Week in Tech: Apple looks ...",
-    "why_important": "来自Marketing Week的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "苹果可能进军折叠屏市场，同时内存价格上升影响消费电子性价比。",
+    "why_important": "对于定制礼品跨境电商callie.com，需关注科技趋势以调整电子类礼品选品和营销策略。",
+    "how_to_use": "callie.com可提前策划折叠屏配件定制服务，并优化内存相关产品促销话术以应对价格波动。"
   },
   {
     "title": "‘You can’t keep fishing in the same pond’: How Primark’s first TV ad ‘changed the conversation’",
+    "title_cn": "Primark首支电视广告“改变对话”：不能总在同一池塘钓鱼",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -709,12 +760,13 @@
     "url": "https://www.marketingweek.com/primark-tv-ad-thinkbox/",
     "published": "2026-06-03T12:19:20",
     "crawled_at": "2026-06-09T10:44:35.526283",
-    "one_sentence": "‘You can’t keep fishing in the...",
-    "why_important": "来自Marketing Week的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "Primark通过首支电视广告突破传统营销模式，成功吸引新客群。",
+    "why_important": "对定制礼品跨境电商而言，创新渠道能打破流量瓶颈，触达更广泛潜在客户。",
+    "how_to_use": "Callie.com可借鉴其跨渠道策略，在社交媒体/短视频平台投放差异化内容，拓展非传统用户群体。"
   },
   {
     "title": "Beyond ROI: Why marketing needs risk metrics",
+    "title_cn": "超越ROI：营销为何需要风险指标",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -723,12 +775,13 @@
     "url": "https://www.marketingweek.com/roi-marketing-risk-metrics/",
     "published": "2026-06-03T06:19:50",
     "crawled_at": "2026-06-09T10:44:35.526344",
-    "one_sentence": "Beyond ROI: Why marketing need...",
-    "why_important": "来自Marketing Week的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "营销效果评估需引入风险指标，而非仅依赖投资回报率。",
+    "why_important": "定制礼品跨境电商需平衡短期收益与长期品牌风险，传统ROI无法全面衡量营销价值。",
+    "how_to_use": "在Callie.com的营销活动中，可结合转化率波动、客户流失风险等指标，优化预算分配和渠道策略。"
   },
   {
     "title": "‘Strategic bullseye’: Inside Paddy Power’s quest to be an entertainment brand",
+    "title_cn": "“战略靶心”：Paddy Power打造娱乐品牌的探索",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -737,12 +790,13 @@
     "url": "https://www.marketingweek.com/paddy-power-entertainment-brand/",
     "published": "2026-06-03T06:00:37",
     "crawled_at": "2026-06-09T10:44:35.526407",
-    "one_sentence": "‘Strategic bullseye’: Inside P...",
-    "why_important": "来自Marketing Week的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "Paddy Power通过融合博彩与娱乐内容成功转型为泛娱乐品牌。",
+    "why_important": "对于callie.com这类跨境电商，借鉴娱乐化营销可提升用户粘性，尤其在定制礼品等感性消费领域。",
+    "how_to_use": "callie.com可通过策划趣味互动内容（如个性化礼物生成游戏）增强品牌娱乐属性，吸引年轻消费者参与传播。"
   },
   {
     "title": "‘Music has no borders’: How Zumba got the world dancing",
+    "title_cn": "“音乐无国界”：Zumba如何让世界起舞",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -751,12 +805,13 @@
     "url": "https://www.marketingweek.com/zumba-world-dancing/",
     "published": "2026-06-02T13:00:17",
     "crawled_at": "2026-06-09T10:44:35.526472",
-    "one_sentence": "‘Music has no borders’: How Zu...",
-    "why_important": "来自Marketing Week的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "Zumba通过音乐和舞蹈打破文化壁垒，成功实现全球品牌扩张。",
+    "why_important": "营销人员可借鉴Zumba的跨文化策略，为Callie.com定制礼品拓展国际市场提供情感共鸣的新思路。",
+    "how_to_use": ""
   },
   {
     "title": "UKTV’s CMO on the importance of combining ‘rigour and flair’",
+    "title_cn": "UKTV首席营销官谈“严谨与创意结合”的重要性",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -765,12 +820,13 @@
     "url": "https://www.marketingweek.com/uktv-cmo-rigour-flair/",
     "published": "2026-06-02T06:02:07",
     "crawled_at": "2026-06-09T10:44:35.526541",
-    "one_sentence": "UKTV’s CMO on the importance o...",
-    "why_important": "来自Marketing Week的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "UKTV首席营销官强调成功营销需平衡数据严谨与创意灵感。",
+    "why_important": "对定制礼品跨境电商而言，严谨确保精准投放，创意提升品牌吸引力，二者结合能优化广告效果。",
+    "how_to_use": "Callie.com可通过数据分析定位目标客户，同时运用创意内容（如个性化故事视频）增强情感共鸣，提升转化率。"
   },
   {
     "title": "AI expected to drive £18bn of UK digital ad spend by 2030",
+    "title_cn": "AI将推动英国数字广告支出至2030年达180亿英镑",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -779,12 +835,13 @@
     "url": "https://www.marketingweek.com/iab-uk-ai-ad-spend/",
     "published": "2026-06-02T06:00:50",
     "crawled_at": "2026-06-09T10:44:35.526601",
-    "one_sentence": "AI expected to drive £18bn of ...",
-    "why_important": "Marketing Week发布的行业趋势分析，帮助把握市场方向",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "AI技术预计在2030年前为英国数字广告市场贡献180亿英镑增长。",
+    "why_important": "对Callie.com而言，AI驱动的广告投放能精准触达海外定制礼品受众，提升转化率。",
+    "how_to_use": "Callie.com可利用AI工具优化广告定向和创意，通过动态生成个性化素材降低获客成本并提升ROI。"
   },
   {
     "title": "Agentic AI is changing how brands show up, but marketers can’t lose focus on what happens next",
+    "title_cn": "代理型AI正在改变品牌呈现方式，但营销者需关注后续影响",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -793,12 +850,13 @@
     "url": "https://www.marketingweek.com/helen-edwards-agentic-ai-marketers-focus/",
     "published": "2026-06-02T05:15:13",
     "crawled_at": "2026-06-09T10:44:35.526672",
-    "one_sentence": "Agentic AI is changing how bra...",
-    "why_important": "来自Marketing Week的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "代理型AI重塑品牌互动模式，但营销者须确保后续用户体验与转化。",
+    "why_important": "对Callie.com而言，AI驱动的个性化展示能提升定制礼品吸引力，但需避免因技术忽视用户实际购买体验。",
+    "how_to_use": "Callie.com可运用AI优化产品页动态展示，同时建立用户行为追踪机制，确保从浏览到购买的全程体验无缝衔接。"
   },
   {
     "title": "Inside Asda’s journey to ‘reshape’ its social strategy",
+    "title_cn": "Asda重塑社交媒体营销策略的内幕",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -807,12 +865,13 @@
     "url": "https://www.marketingweek.com/asda-social-media-reshape-commerce/",
     "published": "2026-06-01T11:25:14",
     "crawled_at": "2026-06-09T10:44:35.526739",
-    "one_sentence": "Inside Asda’s journey to ‘resh...",
-    "why_important": "来自Marketing Week的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "Asda通过数据驱动和用户互动重塑社媒策略，提升品牌影响力。",
+    "why_important": "跨境电商需借鉴Asda的社媒优化经验，以数据精准触达目标受众，提升转化率。",
+    "how_to_use": "Callie.com可参考Asda的互动策略，结合用户数据分析，在社媒平台定制个性化礼品推广内容，增强用户粘性。"
   },
   {
     "title": "Asos’ top marketer on bringing the brand ‘back to growth’",
+    "title_cn": "Asos首席营销官谈如何让品牌“重回增长轨道”",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -821,12 +880,13 @@
     "url": "https://www.marketingweek.com/asos-growth-transformation/",
     "published": "2026-06-01T06:11:54",
     "crawled_at": "2026-06-09T10:44:35.526808",
-    "one_sentence": "Asos’ top marketer on bringing...",
-    "why_important": "来自Marketing Week的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "Asos通过优化营销策略和聚焦核心用户群实现品牌增长。",
+    "why_important": "跨境电商如Callie.com可借鉴其精准营销方法，提升品牌吸引力和用户留存。",
+    "how_to_use": "Callie.com可效仿Asos的数据驱动营销，分析用户行为并优化个性化推荐，以提升转化率和复购率。"
   },
   {
     "title": "Brand visibility is reinventing search – and it’s a good thing",
+    "title_cn": "品牌可见度正在重塑搜索——这是件好事",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -835,12 +895,13 @@
     "url": "https://www.marketingweek.com/brand-visibility-reinventing-search/",
     "published": "2026-06-01T06:05:22",
     "crawled_at": "2026-06-09T10:44:35.526879",
-    "one_sentence": "Brand visibility is reinventin...",
-    "why_important": "来自Marketing Week的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "品牌可见度通过优化搜索体验提升用户忠诚度，成为营销新趋势。",
+    "why_important": "对callie.com而言，增强品牌可见度能提升定制礼品在跨境市场的搜索排名和用户信任。",
+    "how_to_use": "callie.com可通过优化关键词、内容营销和社交媒体互动，在搜索引擎和社交平台同步强化品牌曝光。"
   },
   {
     "title": "Three quarters of CMOs grappling with AI skills gap",
+    "title_cn": "四分之三CMO面临AI技能缺口问题",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -849,12 +910,13 @@
     "url": "https://www.marketingweek.com/cmos-grappling-ai-skills-gap/",
     "published": "2026-05-29T06:10:23",
     "crawled_at": "2026-06-09T10:44:35.526946",
-    "one_sentence": "Three quarters of CMOs grappli...",
-    "why_important": "Marketing Week发布的数据报告，提供决策依据",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "多数营销高管因团队AI能力不足难以释放技术潜力。",
+    "why_important": "定制礼品跨境电商需AI驱动个性化营销，技能缺口将直接影响Callie.com的广告投放效率和用户转化。",
+    "how_to_use": "Callie.com可优先对营销团队进行AI工具培训，同时引进具备AI经验的数字营销人才，优化DTC广告的智能投放策略。"
   },
   {
     "title": "If you want to grow, act a few sizes bigger than you are",
+    "title_cn": "若想成长，就以更大格局行事",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -863,12 +925,13 @@
     "url": "https://www.marketingweek.com/grow-act-bigger/",
     "published": "2026-05-29T06:03:32",
     "crawled_at": "2026-06-09T10:44:35.527008",
-    "one_sentence": "If you want to grow, act a few...",
-    "why_important": "来自Marketing Week的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "品牌通过塑造高于当前规模的认知形象，能加速成长。",
+    "why_important": "对Callie.com而言，在跨境定制礼品赛道建立“行业引领者”形象，可快速抢占用户心智。",
+    "how_to_use": "在官网视觉、社媒内容及广告投放中强化“全球定制专家”标签，用专业案例和规模化语言提升品牌溢价。"
   },
   {
     "title": "The marketing channel sitting quietly in every employee’s outbox",
+    "title_cn": "每个员工邮箱里静待启用的营销渠道",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -877,12 +940,13 @@
     "url": "https://www.marketingweek.com/marketing-channel-employee-outbox/",
     "published": "2026-05-28T15:53:08",
     "crawled_at": "2026-06-09T10:44:35.527080",
-    "one_sentence": "The marketing channel sitting ...",
-    "why_important": "来自Marketing Week的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "员工邮件签名可作为低成本高转化的隐形营销渠道。",
+    "why_important": "对定制礼品跨境电商callie.com而言，员工日常邮件能精准触达B端客户，强化品牌曝光且零成本。",
+    "how_to_use": "callie.com可统一设计含产品链接/促销信息的员工邮件签名模板，尤其针对销售和客服等高频外联岗位。"
   },
   {
     "title": "Leading B2B firms twice as likely to have ‘fully implemented’ gen AI",
+    "title_cn": "领先B2B企业“全面实施”生成式AI的可能性是其他企业的两倍",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -891,12 +955,13 @@
     "url": "https://www.marketingweek.com/b2b-gen-ai-grow-market-share/",
     "published": "2026-05-28T13:01:33",
     "crawled_at": "2026-06-09T10:44:35.527143",
-    "one_sentence": "Leading B2B firms twice as lik...",
-    "why_important": "Marketing Week发布的数据报告，提供决策依据",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "B2B行业头部企业更积极部署生成式AI技术，已形成明显竞争优势。",
+    "why_important": "对Callie.com而言，AI技术能提升定制礼品设计效率和跨境营销精准度，是保持竞争力的关键。",
+    "how_to_use": "可引入AI工具优化礼品设计流程，并通过生成式AI快速产出多语言营销内容，提升海外市场转化率。"
   },
   {
     "title": "You’ll learn more from how a brand fails than how it succeeds",
+    "title_cn": "从品牌失败中学到的比成功更多",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -905,12 +970,13 @@
     "url": "https://www.marketingweek.com/learn-brand-fails-succeeds/",
     "published": "2026-05-28T11:56:58",
     "crawled_at": "2026-06-09T10:44:35.527212",
-    "one_sentence": "You’ll learn more from how a b...",
-    "why_important": "来自Marketing Week的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "分析品牌失败案例比研究成功案例更能提供有价值的营销洞察。",
+    "why_important": "对Callie.com而言，借鉴失败经验能规避风险，优化定制礼品跨境策略，提升市场竞争力。",
+    "how_to_use": "通过复盘同行失败案例，调整Callie.com的选品、定价和推广策略，避免类似错误并强化品牌差异化优势。"
   },
   {
     "title": "‘Tipping point’: Dogs Trust bets on brand refresh to become household name",
+    "title_cn": "“转折点”：Dogs Trust通过品牌焕新谋求家喻户晓",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -919,12 +985,13 @@
     "url": "https://www.marketingweek.com/dogs-trust-brand-refresh-strategy/",
     "published": "2026-05-28T06:30:53",
     "crawled_at": "2026-06-09T10:44:35.527274",
-    "one_sentence": "‘Tipping point’: Dogs Trust be...",
-    "why_important": "来自Marketing Week的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "英国慈善机构Dogs Trust通过品牌重塑策略提升公众认知度。",
+    "why_important": "品牌焕新是跨境电商提升市场竞争力的有效手段，值得Callie.com借鉴。",
+    "how_to_use": "Callie.com可参考其品牌焕新策略，通过视觉升级和故事化营销强化品牌识别度，吸引跨境消费者。"
   },
   {
     "title": "Festival of Marketing 2026 looks to ‘Raise the Bar’",
+    "title_cn": "2026营销节旨在“提升标准”",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -933,12 +1000,13 @@
     "url": "https://www.marketingweek.com/festival-of-marketing-2026-theme/",
     "published": "2026-05-28T06:00:38",
     "crawled_at": "2026-06-09T10:44:35.527336",
-    "one_sentence": "Festival of Marketing 2026 loo...",
-    "why_important": "来自Marketing Week的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "2026营销节将聚焦创新策略，助力品牌突破营销瓶颈。",
+    "why_important": "对定制礼品跨境电商callie.com而言，及时获取前沿营销趋势可提升节日营销竞争力。",
+    "how_to_use": "callie.com可借鉴活动中的创新案例，优化圣诞/情人节等节日营销策略，结合定制化优势打造差异化广告。"
   },
   {
     "title": "High Performance Podcast duo to headline Festival of Marketing",
+    "title_cn": "高效播客二人组将领衔营销节",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -947,12 +1015,13 @@
     "url": "https://www.marketingweek.com/high-performance-podcast-festival-of-marketing/",
     "published": "2026-05-28T06:00:08",
     "crawled_at": "2026-06-09T10:44:35.527392",
-    "one_sentence": "High Performance Podcast duo t...",
-    "why_important": "Marketing Week提供的实操教程，适合学习参考",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "两位播客红人将在营销节分享高效营销策略。",
+    "why_important": "播客营销能帮助Callie.com触达海外年轻受众，提升品牌影响力。",
+    "how_to_use": "Callie.com可邀请行业KOL合作播客，结合定制礼品案例讲述品牌故事，增强用户粘性。"
   },
   {
     "title": "‘Marketing needs to sell itself better’: CFOs on what they want from marketers",
+    "title_cn": "CFO们对营销人员的期望：营销需更好地自我推销",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -961,12 +1030,13 @@
     "url": "https://www.marketingweek.com/cfos-want-from-marketing/",
     "published": "2026-05-27T15:17:56",
     "crawled_at": "2026-06-09T10:44:35.527458",
-    "one_sentence": "‘Marketing needs to sell itsel...",
-    "why_important": "来自Marketing Week的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "CFO希望营销人员更清晰地展示营销活动的商业价值。",
+    "why_important": "对于callie.com这类跨境电商，明确营销ROI能赢得财务支持，优化预算分配。",
+    "how_to_use": "callie.com可定期向管理层汇报营销数据（如转化率、客单价），用可视化报告证明营销对收入的直接贡献。"
   },
   {
     "title": "The Week in Tech: The cost of AI and Uber’s token problem",
+    "title_cn": "科技周报：AI成本与优步的代币问题",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -975,12 +1045,13 @@
     "url": "https://www.marketingweek.com/week-in-tech-ai-uber-token/",
     "published": "2026-05-27T12:15:55",
     "crawled_at": "2026-06-09T10:44:35.527522",
-    "one_sentence": "The Week in Tech: The cost of ...",
-    "why_important": "来自Marketing Week的营销资讯",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "文章探讨了AI技术的经济代价和优步面临的代币化挑战。",
+    "why_important": "营销人员需关注AI成本对预算的冲击及代币化趋势，以优化Callie.com的跨境技术投入和用户激励策略。",
+    "how_to_use": "Callie.com可评估AI工具性价比以降低营销成本，同时探索代币化积分系统增强用户粘性。"
   },
   {
     "title": "Demand for fractional CMOs ‘driven by expertise over cost’",
+    "title_cn": "企业对兼职首席营销官的需求更看重专业能力而非成本",
     "source": "marketing_week",
     "source_name": "Marketing Week",
     "department": "品牌",
@@ -989,12 +1060,13 @@
     "url": "https://www.marketingweek.com/fractional-cmos-demand-expertise/",
     "published": "2026-05-27T12:05:16",
     "crawled_at": "2026-06-09T10:44:35.527584",
-    "one_sentence": "Demand for fractional CMOs ‘dr...",
-    "why_important": "Marketing Week发布的数据报告，提供决策依据",
-    "how_to_use": "可用于品牌建设、创意灵感、市场定位参考"
+    "one_sentence": "企业更倾向聘请兼职CMO以获取专业经验，而非单纯节省成本。",
+    "why_important": "对于callie.com等跨境电商，专业CMO能高效制定本土化营销策略，提升品牌竞争力。",
+    "how_to_use": "callie.com可考虑与兼职CMO合作，针对不同市场制定精准营销方案，优化预算分配与效果转化。"
   },
   {
     "title": "Threads Brand Safety",
+    "title_cn": "Threads品牌安全策略",
     "source": "meta_business",
     "source_name": "Meta Business",
     "department": "广告投放",
@@ -1003,12 +1075,13 @@
     "url": "https://zh-cn.facebook.com/business/news/brandsafety",
     "published": "2026-05-18T12:55:03",
     "crawled_at": "2026-06-09T10:44:44.526906",
-    "one_sentence": "Threads Brand Safety",
-    "why_important": "来自Meta Business的营销资讯",
-    "how_to_use": "可用于广告投放优化、预算分配、创意参考"
+    "one_sentence": "Meta推出Threads品牌安全工具，帮助广告主控制广告投放环境。",
+    "why_important": "对于Callie.com这类跨境定制礼品电商，确保广告出现在安全内容旁可维护品牌形象并提升转化率。",
+    "how_to_use": "Callie.com可利用Threads的内容过滤功能，将广告投放在与礼品、节日相关的正向内容中，避免敏感话题。"
   },
   {
     "title": "How to optimize content for social search on Meta technologies",
+    "title_cn": "如何优化Meta平台社交搜索的内容",
     "source": "meta_business",
     "source_name": "Meta Business",
     "department": "广告投放",
@@ -1017,12 +1090,13 @@
     "url": "https://zh-cn.facebook.com/business/news/social-search-series-2",
     "published": "2026-05-15T19:30:55",
     "crawled_at": "2026-06-09T10:44:44.526945",
-    "one_sentence": "How to optimize content for so...",
-    "why_important": "Meta Business提供的实操教程，适合学习参考",
-    "how_to_use": "可用于广告投放优化、预算分配、创意参考"
+    "one_sentence": "文章介绍了提升内容在Meta社交搜索中可见性的关键策略。",
+    "why_important": "对于定制礼品跨境电商callie.com，优化社交搜索能精准触达目标客户，提升转化率。",
+    "how_to_use": "callie.com可通过优化帖子关键词、使用话题标签和创建互动内容，增强在Meta平台的搜索排名和用户互动。"
   },
   {
     "title": "The trends reshaping search and the ROI that justifies moving now",
+    "title_cn": "重塑搜索的趋势与立即行动的回报",
     "source": "meta_business",
     "source_name": "Meta Business",
     "department": "广告投放",
@@ -1031,12 +1105,13 @@
     "url": "https://zh-cn.facebook.com/business/news/social-search-series-3",
     "published": "2026-05-15T12:46:09",
     "crawled_at": "2026-06-09T10:44:44.526978",
-    "one_sentence": "The trends reshaping search an...",
-    "why_important": "Meta Business发布的行业趋势分析，帮助把握市场方向",
-    "how_to_use": "可用于广告投放优化、预算分配、创意参考"
+    "one_sentence": "Meta揭示了当前搜索趋势的变化及立即调整广告策略的高回报。",
+    "why_important": "对Callie.com而言，把握这些趋势可优化广告投放，提升定制礼品在跨境市场的转化率。",
+    "how_to_use": "Callie.com可结合Meta的搜索趋势数据，调整关键词和广告创意，精准触达海外礼品定制需求用户。"
   },
   {
     "title": "Why Social Search and Traditional Search Aren’t Competing, They’re Coexisting",
+    "title_cn": "社交搜索与传统搜索并非竞争，而是共存",
     "source": "meta_business",
     "source_name": "Meta Business",
     "department": "广告投放",
@@ -1045,12 +1120,13 @@
     "url": "https://zh-cn.facebook.com/business/news/social-search-series-1",
     "published": "2026-05-14T16:36:39",
     "crawled_at": "2026-06-09T10:44:44.527014",
-    "one_sentence": "Why Social Search and Traditio...",
-    "why_important": "来自Meta Business的营销资讯",
-    "how_to_use": "可用于广告投放优化、预算分配、创意参考"
+    "one_sentence": "社交搜索与传统搜索互补共存，共同满足用户不同需求。",
+    "why_important": "对于callie.com这类定制礼品跨境电商，了解两者差异可优化广告投放策略，覆盖更广泛潜在客户。",
+    "how_to_use": "在Meta等社交平台加强视觉化内容投放，同时通过SEO优化传统搜索排名，实现双渠道流量增长。"
   },
   {
     "title": "Manus Joins Meta: Accelerating AI Innovation for Businesses",
+    "title_cn": "Manus加入Meta：加速企业AI创新",
     "source": "meta_business",
     "source_name": "Meta Business",
     "department": "广告投放",
@@ -1059,12 +1135,13 @@
     "url": "https://zh-cn.facebook.com/business/news/manus-joins-meta-accelerating-ai-innovation-for-businesses",
     "published": "2025-12-29T17:08:07",
     "crawled_at": "2026-06-09T10:44:44.527047",
-    "one_sentence": "Manus Joins Meta: Accelerating...",
-    "why_important": "来自Meta Business的营销资讯",
-    "how_to_use": "可用于广告投放优化、预算分配、创意参考"
+    "one_sentence": "Manus加入Meta将推动AI技术在商业应用中的创新。",
+    "why_important": "对于callie.com等跨境电商，AI创新可提升广告投放精准度和个性化推荐效率，增强竞争力。",
+    "how_to_use": "callie.com可借助Meta的AI工具优化广告定向和用户画像，定制更精准的礼品推荐策略，提高转化率。"
   },
   {
     "title": "Safety and Integrity Highlights from 2025",
+    "title_cn": "2025年安全与诚信要点回顾",
     "source": "meta_business",
     "source_name": "Meta Business",
     "department": "广告投放",
@@ -1073,12 +1150,13 @@
     "url": "https://zh-cn.facebook.com/business/news/safety-and-integrity-highlights-from-2025",
     "published": "2025-12-18T17:30:14",
     "crawled_at": "2026-06-09T10:44:44.527078",
-    "one_sentence": "Safety and Integrity Highlight...",
-    "why_important": "来自Meta Business的营销资讯",
-    "how_to_use": "可用于广告投放优化、预算分配、创意参考"
+    "one_sentence": "Meta总结2025年平台安全与广告诚信措施的核心进展。",
+    "why_important": "定制礼品跨境电商需确保广告合规，避免因平台政策变动影响投放效果。",
+    "how_to_use": "Callie.com可参考Meta的安全标准优化广告素材和投放策略，降低违规风险并提升用户信任度。"
   },
   {
     "title": "Cyber 5 2025: What Worked, What Changed, and How to Win Q5",
+    "title_cn": "2025年Cyber 5营销指南：成功策略、变化与Q5制胜之道",
     "source": "meta_business",
     "source_name": "Meta Business",
     "department": "广告投放",
@@ -1087,12 +1165,13 @@
     "url": "https://zh-cn.facebook.com/business/news/cyber-5-2025-what-worked",
     "published": "2025-12-17T17:00:00",
     "crawled_at": "2026-06-09T10:44:44.527109",
-    "one_sentence": "Cyber 5 2025: What Worked, Wha...",
-    "why_important": "Meta Business提供的实操教程，适合学习参考",
-    "how_to_use": "可用于广告投放优化、预算分配、创意参考"
+    "one_sentence": "Meta通过分析2025年Cyber 5的营销趋势，为跨境电商提供广告投放优化策略。",
+    "why_important": "对Callie.com而言，掌握Cyber 5最新动向能精准触达节日礼品采购人群，提升旺季转化率。",
+    "how_to_use": "可结合Meta的广告洞察，在Callie.com的Q5营销中优化投放时段、受众定位和创意素材，抢占节日流量红利。"
   },
   {
     "title": "Demystifying Creative Diversification",
+    "title_cn": "揭秘创意多样化",
     "source": "meta_business",
     "source_name": "Meta Business",
     "department": "广告投放",
@@ -1101,12 +1180,13 @@
     "url": "https://zh-cn.facebook.com/business/news/demystifying-creative-diversification",
     "published": "2025-12-16T17:00:17",
     "crawled_at": "2026-06-09T10:44:44.527136",
-    "one_sentence": "Demystifying Creative Diversif...",
-    "why_important": "Meta Business提供的实操教程，适合学习参考",
-    "how_to_use": "可用于广告投放优化、预算分配、创意参考"
+    "one_sentence": "创意多样化能提升广告效果并降低疲劳度。",
+    "why_important": "对Callie.com而言，多样化的广告创意能更好吸引全球不同文化背景的消费者，提升转化率。",
+    "how_to_use": "Callie.com可通过测试不同视觉风格、文案和呈现形式，针对特定市场定制广告创意，优化投放效果。"
   },
   {
     "title": "New AI-powered tools to scale creator and brand partnerships",
+    "title_cn": "Meta推出AI工具助力创作者与品牌合作升级",
     "source": "meta_business",
     "source_name": "Meta Business",
     "department": "广告投放",
@@ -1115,8 +1195,8 @@
     "url": "https://zh-cn.facebook.com/business/news/new-ai-powered-tools-to-scale-creator-and-brand-partnerships",
     "published": "2025-12-11T17:00:21",
     "crawled_at": "2026-06-09T10:44:44.527170",
-    "one_sentence": "New AI-powered tools to scale ...",
-    "why_important": "Meta Business推荐的高效工具，提升工作效率",
-    "how_to_use": "可用于广告投放优化、预算分配、创意参考"
+    "one_sentence": "Meta发布新AI工具，帮助品牌高效扩大与创作者的合作规模。",
+    "why_important": "对于定制礼品跨境电商callie.com而言，借助AI工具可精准匹配优质创作者，提升广告投放效果。",
+    "how_to_use": "callie.com可利用该工具自动筛选匹配品牌调性的海外创作者，高效生成个性化推广内容，降低合作成本。"
   }
 ]

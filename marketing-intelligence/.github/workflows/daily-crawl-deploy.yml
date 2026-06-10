@@ -24,6 +24,9 @@ jobs:
       - name: Run crawler
         run: python scripts/crawl.py
 
+      - name: Generate Chinese summaries
+        run: python scripts/improve_summaries.py
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
