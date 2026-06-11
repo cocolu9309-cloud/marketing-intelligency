@@ -222,6 +222,18 @@ body {
   color: #555;
 }
 
+/* .count-badge */
+.count-badge {
+  display: inline-block;
+  background: #e3f2fd;
+  color: #1976d2;
+  padding: 1px 6px;
+  border-radius: 10px;
+  font-size: 11px;
+  margin-left: 6px;
+  font-weight: normal;
+}
+
 /* .article-meta .dept */
 .article-meta .dept {
   background: #fff3e0;

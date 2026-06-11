@@ -19,6 +19,8 @@ async function loadArticles() {
         if (!response.ok) throw new Error('Failed to load articles');
         allArticles = await response.json();
         updateLastUpdated();
+        updateTabCounts();
+        updateFilterCounts();
         renderArticles();
     } catch (error) {
         console.error('加载文章失败:', error);
@@ -49,7 +51,9 @@ function updateLastUpdated() {
  * 解析 RFC 3339 日期字符串为 Date 对象
  */
 function parseDate(dateStr) {
-    return new Date(dateStr);
+    if (!dateStr) return new Date('1970-01-01');
+    const date = new Date(dateStr);
+    return isNaN(date.getTime()) ? new Date('1970-01-01') : date;
 }
 
 /**
@@ -169,6 +173,58 @@ function renderArticles() {
 }
 
 /**
+ * 更新Tab按钮的文章数量显示
+ */
+function updateTabCounts() {
+    const departments = ['all', '品牌', 'SEO', '广告投放', '用户洞察', '竞品最新动态', '社交媒体运营', '社媒热门内容', '定制礼品最新行业趋势'];
+
+    departments.forEach(dept => {
+        const count = allArticles.filter(article => {
+            if (dept !== 'all' && article.department !== dept) return false;
+            return true;
+        }).length;
+
+        const tab = document.querySelector(`.tab[data-department="${dept}"]`);
+        if (tab) {
+            const existingBadge = tab.querySelector('.count-badge');
+            if (existingBadge) {
+                existingBadge.textContent = count;
+            } else {
+                const badge = document.createElement('span');
+                badge.className = 'count-badge';
+                badge.textContent = count;
+                tab.appendChild(badge);
+            }
+        }
+    });
+}
+
+/**
+ * 更新筛选器下拉选项的数量
+ */
+function updateFilterCounts() {
+    // 内容类型统计
+    const contentTypes = ['趋势', '案例', '教程', '工具', '数据', '观点', '其他'];
+    contentTypes.forEach(type => {
+        const count = allArticles.filter(a => a.content_type === type).length;
+        const option = document.querySelector(`#typeFilter option[value="${type}"]`);
+        if (option) {
+            option.textContent = `${type}（${count}）`;
+        }
+    });
+
+    // 重要程度统计
+    const importances = [{v: '高', label: '重要'}, {v: '中', label: '一般'}, {v: '低', label: '普通'}];
+    importances.forEach(({v, label}) => {
+        const count = allArticles.filter(a => a.importance === v).length;
+        const option = document.querySelector(`#importanceFilter option[value="${v}"]`);
+        if (option) {
+            option.textContent = `${label}（${count}）`;
+        }
+    });
+}
+
+/**
  * 初始化事件监听
  */
 function initEventListeners() {
@@ -179,6 +235,7 @@ function initEventListeners() {
             tab.classList.add('active');
             currentFilters.department = tab.dataset.department || 'all';
             renderArticles();
+            updateTabCounts();
         });
     });
 
