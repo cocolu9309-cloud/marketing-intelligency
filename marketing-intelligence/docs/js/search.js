@@ -6,7 +6,8 @@ let currentFilters = {
     importance: "all",
     timeRange: "all",
     keyword: "",
-    source: "all"
+    source: "all",
+    freshness: "all"
 };
 
 /**
@@ -14,7 +15,7 @@ let currentFilters = {
  */
 async function loadArticles() {
     try {
-        const response = await fetch('https://cocolu9309-cloud.github.io/marketing-intelligency/data/articles.json');
+        const response = await fetch('./data/articles.json');
         if (!response.ok) throw new Error('Failed to load articles');
         allArticles = await response.json();
         updateLastUpdated();
@@ -82,6 +83,16 @@ function filterArticles() {
             if (currentFilters.timeRange === 'today' && diffHours >= 24) return false;
             if (currentFilters.timeRange === 'week' && diffDays > 7) return false;
             if (currentFilters.timeRange === 'month' && diffDays > 30) return false;
+        }
+
+        // 内容新旧筛选（新内容：3个月内 / 热门内容：6个月内）
+        if (currentFilters.freshness !== 'all') {
+            const articleDate = parseDate(article.published || article.crawled_at);
+            const now = new Date();
+            const diffDays = (now - articleDate) / (1000 * 60 * 60 * 24);
+
+            if (currentFilters.freshness === 'new' && diffDays > 90) return false;
+            if (currentFilters.freshness === 'hot' && diffDays > 180) return false;
         }
 
         // 关键词搜索
@@ -186,6 +197,12 @@ function initEventListeners() {
     // 时间范围筛选
     document.getElementById('timeFilter').addEventListener('change', (e) => {
         currentFilters.timeRange = e.target.value;
+        renderArticles();
+    });
+
+    // 内容新旧筛选
+    document.getElementById('freshnessFilter').addEventListener('change', (e) => {
+        currentFilters.freshness = e.target.value;
         renderArticles();
     });
 

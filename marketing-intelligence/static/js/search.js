@@ -14,7 +14,7 @@ let currentFilters = {
  */
 async function loadArticles() {
     try {
-        const response = await fetch('data/articles.json');
+        const response = await fetch('https://cocolu9309-cloud.github.io/marketing-intelligency/data/articles.json');
         if (!response.ok) throw new Error('Failed to load articles');
         allArticles = await response.json();
         updateLastUpdated();
@@ -76,9 +76,10 @@ function filterArticles() {
             const articleDate = parseDate(article.published || article.crawled_at);
             const now = new Date();
             const diffMs = now - articleDate;
-            const diffDays = diffMs / (1000 * 60 * 60 * 24);
+            const diffHours = diffMs / (1000 * 60 * 60);
+            const diffDays = diffHours / 24;
 
-            if (currentFilters.timeRange === 'today' && diffDays >= 1) return false;
+            if (currentFilters.timeRange === 'today' && diffHours >= 24) return false;
             if (currentFilters.timeRange === 'week' && diffDays > 7) return false;
             if (currentFilters.timeRange === 'month' && diffDays > 30) return false;
         }
@@ -115,7 +116,8 @@ function renderArticles() {
         // 重要性星级（高=5星，中=3星，低=1星）
         const impMap = { "高": 5, "中": 3, "低": 1 };
         const stars = '★'.repeat(impMap[article.importance] || 3) + '☆'.repeat(5 - (impMap[article.importance] || 3));
-        const date = parseDate(article.crawled_at).toLocaleString('zh-CN', {
+        // 发布时间（优先用published，备用crawled_at）
+        const publishDate = parseDate(article.published || article.crawled_at).toLocaleString('zh-CN', {
             year: 'numeric',
             month: 'long',
             day: 'numeric',
@@ -138,7 +140,7 @@ function renderArticles() {
                 <span class="tag department-tag">${article.department}</span>
                 <span class="tag type-tag">${article.content_type}</span>
                 <span class="tag source-tag">${article.source}</span>
-                <span class="tag time-tag">${date}</span>
+                <span class="tag time-tag">📅${publishDate}</span>
             </div>
             <div class="article-summary">
                 <p class="one-sentence"><strong>一句话:</strong> ${article.one_sentence || '暂无'}</p>
