@@ -20,6 +20,13 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Sync with remote
+        run: |
+          git config user.name "Crawler"
+          git config user.email "crawler@github.com"
+          git fetch origin main
+          git reset --hard origin/main
+
       - name: Install deps
         run: pip install feedparser requests beautifulsoup4
 
@@ -38,10 +45,6 @@ jobs:
 
       - name: Commit and push
         run: |
-          git config user.name "Crawler"
-          git config user.email "crawler@github.com"
-          git fetch origin main
-          git reset --hard origin/main
           git add docs/data/articles.json marketing-intelligence/data/articles.json
           git diff --staged --quiet || git commit -m "chore: auto update articles $(date '+%Y-%m-%d %H:%M')"
           git push
