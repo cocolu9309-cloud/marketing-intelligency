@@ -18,6 +18,11 @@ jobs:
       - name: Install deps
         run: pip install feedparser requests beautifulsoup4
 
+      - name: Create data directories
+        run: |
+          mkdir -p data
+          mkdir -p docs/data
+
       - name: Crawl articles
         run: python marketing-intelligence/scripts/crawl.py
 
