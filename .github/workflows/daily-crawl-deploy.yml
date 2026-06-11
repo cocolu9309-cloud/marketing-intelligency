@@ -22,7 +22,9 @@ jobs:
         run: python marketing-intelligence/scripts/crawl.py
 
       - name: Copy articles.json to docs
-        run: cp marketing-intelligence/data/articles.json docs/data/articles.json
+        run: |
+          mkdir -p docs/data
+          cp marketing-intelligence/data/articles.json docs/data/articles.json
 
       - name: Commit and push
         run: |
