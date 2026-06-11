@@ -38,9 +38,8 @@ jobs:
         run: |
           git config user.name "Crawler"
           git config user.email "crawler@github.com"
-          git config pull.rebase false
-          git fetch origin main --depth=1000
-          git merge origin/main --no-edit || echo "No remote changes to merge"
+          git fetch origin main
+          git reset --hard origin/main
           git add docs/data/articles.json marketing-intelligence/data/articles.json
           git diff --staged --quiet || git commit -m "chore: auto update articles $(date '+%Y-%m-%d %H:%M')"
           git push
