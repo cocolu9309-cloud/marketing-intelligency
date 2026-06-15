@@ -3,11 +3,14 @@ from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 from knowledge_base.db import init_db
 from api import opportunities, briefs, trends, competitors, search
+from scheduler import start_scheduler, stop_scheduler
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     init_db()
+    start_scheduler()
     yield
+    stop_scheduler()
 
 app = FastAPI(
     title="市场洞察 Agent API",
