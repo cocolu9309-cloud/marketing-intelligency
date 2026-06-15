@@ -1,0 +1,37 @@
+name: Daily Crawl and Deploy
+
+on:
+  schedule:
+    # 每天北京时间 06:00 自动爬取
+    # GitHub Actions 使用 UTC，06:00 UTC = 14:00 CST
+    - cron: '0 6 * * *'
+  workflow_dispatch:  # 支持手动触发
+
+jobs:
+  crawl-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install feedparser beautifulsoup4 requests
+
+      - name: Run crawler
+        run: python scripts/crawl.py
+        working-directory: scripts
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git add docs/data/articles.json
+          git diff --quiet --cached || git commit -m "chore: auto update articles $(date +'%Y-%m-%d %H:%M')"
+          git push

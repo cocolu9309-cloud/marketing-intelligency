@@ -4,10 +4,15 @@ Marketing Intelligence Crawler
 """
 
 import json
+import os
 import requests
 from datetime import datetime
+from pathlib import Path
 from bs4 import BeautifulSoup
 import feedparser
+
+# 获取脚本所在目录的父目录（即项目根目录）
+REPO_ROOT = Path(__file__).parent.parent
 
 # RSS 订阅源配置
 RSS_SOURCES = {
@@ -27,6 +32,13 @@ RSS_SOURCES = {
     "practical_ecommerce": "https://www.practicalecommerce.com/feed/",
     "small_business_trends": "https://smallbiztrends.com/feed/",
     "printful": "https://www.printful.com/blog/feed",
+    # 新增：研究数据来源
+    "social_media_examiner": "https://www.socialmediaexaminer.com/feed/",
+    "adverity": "https://blog.adverity.com/feed/",
+    # Google News 竞品监控 RSS
+    "google_news_etsy": "https://news.google.com/news/rss/search?q=etsy+custom+gift&hl=en-US&gl=US&ceid=US:en",
+    "google_news_print_on_demand": "https://news.google.com/news/rss/search?q=print+on+demand+custom+gift&hl=en-US&gl=US&ceid=US:en",
+    "google_news_personalized_gift": "https://news.google.com/news/rss/search?q=personalized+gift+trend&hl=en-US&gl=US&ceid=US:en",
 }
 
 # Etsy 竞品店铺配置
@@ -60,6 +72,13 @@ DEPARTMENT_MAPPING = {
     "practical_ecommerce": "社媒热门内容",
     # 定制礼品最新行业趋势
     "small_business_trends": "定制礼品最新行业趋势",
+    # 新增：研究数据来源
+    "social_media_examiner": "社媒热门内容",
+    "adverity": "数据",
+    # Google News 竞品监控
+    "google_news_etsy": "竞品最新动态",
+    "google_news_print_on_demand": "竞品最新动态",
+    "google_news_personalized_gift": "定制礼品最新行业趋势",
 }
 
 # 内容类型关键词
@@ -129,6 +148,7 @@ def generate_summary(title: str, content_type: str, department: str, source_name
         "社交媒体运营": "可用于社交媒体内容策划、平台运营策略借鉴",
         "社媒热门内容": "可用于内容选题、热点追踪、病毒传播规律参考",
         "定制礼品最新行业趋势": "可用于选品决策、行业洞察、定制礼品趋势参考",
+        "数据": "可用于数据驱动决策、营销效果评估、趋势分析参考",
     }
     how_to_use = how_to_use_map.get(department, "可用于营销策划参考")
 
@@ -203,6 +223,11 @@ def parse_rss_source(source_key: str, source_url: str) -> list:
                 "practical_ecommerce": "Practical Ecommerce",
                 "small_business_trends": "Small Business Trends",
                 "printful": "Printful",
+                "social_media_examiner": "Social Media Examiner",
+                "adverity": "Adverity",
+                "google_news_etsy": "Google News (Etsy)",
+                "google_news_print_on_demand": "Google News (Print on Demand)",
+                "google_news_personalized_gift": "Google News (Personalized Gift)",
             }
             source_name = source_name_map.get(source_key, source_key)
 
@@ -316,8 +341,8 @@ def main():
     # 按发布时间排序（最新的在前）
     all_articles.sort(key=lambda x: x.get('published', ''), reverse=True)
 
-    # 写入 JSON 文件
-    output_path = "data/articles.json"
+    # 写入 JSON 文件（直接写到 docs/ 目录，GitHub Pages 从 docs/ 服务）
+    output_path = REPO_ROOT / "docs" / "data" / "articles.json"
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(all_articles, f, ensure_ascii=False, indent=2)
 
