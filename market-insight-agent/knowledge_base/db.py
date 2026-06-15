@@ -24,6 +24,18 @@ class TrendSignalDB(Base):
     created_at = Column(DateTime, default=datetime.now)
 
 
+class CompetitorDB(Base):
+    __tablename__ = "competitors"
+    id = Column(String, primary_key=True)
+    brand = Column(String, nullable=False)
+    url = Column(String)
+    category = Column(String)
+    has_custom_product = Column(String)  # 完全定制/不完全定制
+    marketing_email = Column(String)
+    notes = Column(Text)
+    created_at = Column(DateTime, default=datetime.now)
+
+
 class CompetitorActionDB(Base):
     __tablename__ = "competitor_actions"
     id = Column(String, primary_key=True)
