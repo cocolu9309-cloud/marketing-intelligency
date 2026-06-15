@@ -341,8 +341,8 @@ def main():
     # 按发布时间排序（最新的在前）
     all_articles.sort(key=lambda x: x.get('published', ''), reverse=True)
 
-    # 写入 JSON 文件（直接写到 docs/ 目录，GitHub Pages 从 docs/ 服务）
-    output_path = REPO_ROOT / "docs" / "data" / "articles.json"
+    # 写入 JSON 文件（GitHub Pages 从 marketing-intelligency/data/ 读取）
+    output_path = REPO_ROOT / "data" / "articles.json"
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(all_articles, f, ensure_ascii=False, indent=2)
 
