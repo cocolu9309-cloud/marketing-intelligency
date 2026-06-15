@@ -107,7 +107,8 @@ def process_article(article):
         }
 
 def main():
-    input_path = Path("data/articles.json")
+    repo_root = Path(__file__).parent.parent
+    input_path = repo_root / "data" / "articles.json"
     if not input_path.exists():
         print(f"[ERROR] File not found: {input_path}")
         return
