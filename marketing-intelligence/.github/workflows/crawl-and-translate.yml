@@ -1,9 +1,6 @@
-name: Daily Crawl and Deploy
+name: Daily Crawl and Translate
 
 on:
-  push:
-    branches:
-      - main
   schedule:
     - cron: '0 1 * * *'
   workflow_dispatch:
@@ -36,18 +33,18 @@ jobs:
           mkdir -p docs/data
 
       - name: Crawl articles
-        run: python marketing-intelligence/scripts/crawl.py
+        run: python scripts/crawl.py
 
       - name: LLM translation - generate Chinese summaries
-        run: python marketing-intelligence/scripts/improve_summaries.py
+        run: python scripts/improve_summaries.py
 
       - name: Copy articles.json to docs
         run: |
           mkdir -p docs/data
-          cp marketing-intelligence/data/articles.json docs/data/articles.json
+          cp data/articles.json docs/data/articles.json
 
       - name: Commit and push
         run: |
-          git add docs/data/articles.json marketing-intelligence/data/articles.json
+          git add docs/data/articles.json data/articles.json
           git diff --staged --quiet || git commit -m "chore: auto update articles $(date '+%Y-%m-%d %H:%M')"
           git push --force-with-lease origin main
