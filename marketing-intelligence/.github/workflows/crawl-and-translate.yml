@@ -22,7 +22,8 @@ jobs:
           git config user.name "Crawler"
           git config user.email "crawler@github.com"
           git fetch origin main
-          git reset --hard origin/main
+          # 只更新articles.json，不影响其他文件
+          git checkout origin/main -- data/articles.json docs/data/articles.json 2>/dev/null || true
 
       - name: Install deps
         run: pip install feedparser requests beautifulsoup4
