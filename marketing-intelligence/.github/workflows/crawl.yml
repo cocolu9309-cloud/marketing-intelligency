@@ -1,41 +1,53 @@
 name: Daily Crawl and Deploy
 
 on:
+  push:
+    branches:
+      - main
   schedule:
-    # 每天北京时间 06:00 自动爬取
-    # GitHub Actions 使用 UTC，06:00 UTC = 14:00 CST
-    - cron: '0 6 * * *'
-  workflow_dispatch:  # 支持手动触发
+    - cron: '0 1 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
-  crawl-and-deploy:
+  crawl-and-push:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Install dependencies
-        run: pip install feedparser beautifulsoup4 requests
-
-      - name: Run crawler (抓取RSS源生成articles.json)
-        run: python scripts/crawl.py
-        working-directory: scripts
-
-      - name: Run LLM translation (DeepSeek-V3翻译标题生成中文摘要)
-        run: python scripts/improve_summaries.py
-        working-directory: scripts
-
-      - name: Commit and push if changed
+      - name: Sync with remote
         run: |
-          git config user.name "GitHub Actions Bot"
-          git config user.email "actions@github.com"
-          git add data/articles.json
-          git diff --quiet --cached || git commit -m "chore: auto update articles $(date +'%Y-%m-%d %H:%M')"
-          git push
+          git config user.name "Crawler"
+          git config user.email "crawler@github.com"
+          git fetch origin main
+          git reset --hard origin/main
+
+      - name: Install deps
+        run: pip install feedparser requests beautifulsoup4
+
+      - name: Create data directories
+        run: |
+          mkdir -p data
+          mkdir -p docs/data
+
+      - name: Crawl articles
+        run: python marketing-intelligence/scripts/crawl.py
+
+      - name: LLM translation - generate Chinese summaries
+        run: python marketing-intelligence/scripts/improve_summaries.py
+
+      - name: Copy articles.json to docs
+        run: |
+          mkdir -p docs/data
+          cp marketing-intelligence/data/articles.json docs/data/articles.json
+
+      - name: Commit and push
+        run: |
+          git add docs/data/articles.json marketing-intelligence/data/articles.json
+          git diff --staged --quiet || git commit -m "chore: auto update articles $(date '+%Y-%m-%d %H:%M')"
+          git push --force-with-lease origin main
