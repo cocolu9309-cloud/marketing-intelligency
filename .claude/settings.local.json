@@ -107,7 +107,13 @@
       "PowerShell(python C:\\\\temp\\\\generate_excel_with_images.py)",
       "PowerShell($a = \\(Get-Content \"D:\\\\工作\\\\AI\\\\claude-demo\\\\marketing-intelligence\\\\data\\\\articles.json\" -Raw | ConvertFrom-Json\\)[0]; $a.title_cn)",
       "PowerShell(python C:\\\\temp\\\\generate_excel_cn.py)",
-      "PowerShell($c = Get-Content \"D:\\\\工作\\\\AI\\\\claude-demo\\\\marketing-intelligence\\\\data\\\\articles.json\" -Raw | ConvertFrom-Json; $filled = \\($c | Where-Object{$_.title_cn}\\).Count; $total = $c.Count; Write-Host \"$filled/$total translated\")"
+      "PowerShell($c = Get-Content \"D:\\\\工作\\\\AI\\\\claude-demo\\\\marketing-intelligence\\\\data\\\\articles.json\" -Raw | ConvertFrom-Json; $filled = \\($c | Where-Object{$_.title_cn}\\).Count; $total = $c.Count; Write-Host \"$filled/$total translated\")",
+      "PowerShell($c = Get-Content \"D:\\\\工作\\\\AI\\\\claude-demo\\\\marketing-intelligence\\\\data\\\\articles.json\" -Raw | ConvertFrom-Json; $filled = \\($c | Where-Object{$_.psobject.properties.name -contains 'title_cn'}\\).Count; \"$filled / $\\($c.Count\\)\")",
+      "PowerShell(python -c \"import json; f=open\\('D:/工作/AI/claude-demo/marketing-intelligence/data/articles.json', encoding:'utf-8'\\); d=json.load\\(f\\); f.close\\(\\); cn=[x for x in d if x.get\\('title_cn'\\)]; print\\(f'Total: {len\\(d\\)}, with title_cn: {len\\(cn\\)}'\\)\" 2>&1)",
+      "PowerShell(python C:\\\\temp\\\\generate_docx.py)",
+      "PowerShell(Invoke-RestMethod http://localhost:3000/api/competitors/actions/ -Method GET 2>$null | ConvertTo-Json -Depth 2 | Select-Object -First 1)",
+      "PowerShell(Invoke-RestMethod http://localhost:8000/api/competitors/actions/ -Method GET 2>$null | ConvertTo-Json -Depth 2)",
+      "PowerShell(pip show *)"
     ]
   }
 }
