@@ -32,6 +32,8 @@ def process_article(article):
     importance = article.get("importance", "中")
     published = article.get("published", "")
     crawled_at = article.get("crawled_at", "")
+    # Preserve existing title_cn to avoid overwriting manual translations
+    existing_title_cn = article.get("title_cn", "")
 
     prompt = f"""你是一个专业的跨境电商营销顾问。请根据以下文章信息，生成中文摘要。
 
@@ -69,7 +71,7 @@ def process_article(article):
                 how_to_use = line.replace("【可以怎么用】", "").strip()
 
         if not cn_title:
-            cn_title = title[:30] + "..." if len(title) > 30 else title
+            cn_title = existing_title_cn or (title[:30] + "..." if len(title) > 30 else title)
         if not one_sentence:
             one_sentence = cn_title
 
@@ -92,7 +94,7 @@ def process_article(article):
         print(f"  [ERROR] Failed to process: {title[:30]}... - {e}")
         return {
             "title": title,
-            "title_cn": title[:30],
+            "title_cn": existing_title_cn or title[:30],
             "source": source,
             "source_name": source_name,
             "department": department,

@@ -25,7 +25,7 @@ jobs:
           git config user.name "Crawler"
           git config user.email "crawler@github.com"
           git fetch origin main
-          git reset --hard origin/main
+          git merge origin/main --no-edit
 
       - name: Install deps
         run: pip install feedparser requests beautifulsoup4
