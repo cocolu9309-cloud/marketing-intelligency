@@ -113,7 +113,20 @@
       "PowerShell(python C:\\\\temp\\\\generate_docx.py)",
       "PowerShell(Invoke-RestMethod http://localhost:3000/api/competitors/actions/ -Method GET 2>$null | ConvertTo-Json -Depth 2 | Select-Object -First 1)",
       "PowerShell(Invoke-RestMethod http://localhost:8000/api/competitors/actions/ -Method GET 2>$null | ConvertTo-Json -Depth 2)",
-      "PowerShell(pip show *)"
+      "PowerShell(pip show *)",
+      "PowerShell(\\(Get-Content \"D:\\\\工作\\\\AI\\\\claude-demo\\\\marketing-intelligence\\\\data\\\\articles.json\" | ConvertFrom-Json | Measure-Object\\).Count; \\(Get-Content \"D:\\\\工作\\\\AI\\\\claude-demo\\\\marketing-intelligence\\\\data\\\\articles.json\" | ConvertFrom-Json | Where-Object { $_.title_cn -ne $null -and $_.title_cn -ne \"\" } | Measure-Object\\).Count)",
+      "PowerShell(\\(Get-Content \"D:\\\\工作\\\\AI\\\\claude-demo\\\\marketing-intelligence\\\\data\\\\articles.json\" | ConvertFrom-Json | Where-Object { $_.title_cn -ne $null -and $_.title_cn -ne \"\" } | Measure-Object\\).Count)",
+      "PowerShell(Start-Sleep 120; \\(Get-Content \"D:\\\\工作\\\\AI\\\\claude-demo\\\\marketing-intelligence\\\\data\\\\articles.json\" | ConvertFrom-Json | Where-Object { $_.title_cn -ne $null -and $_.title_cn -ne \"\" } | Measure-Object\\).Count)",
+      "PowerShell(Start-Sleep 180; \\(Get-Content \"D:\\\\工作\\\\AI\\\\claude-demo\\\\marketing-intelligence\\\\data\\\\articles.json\" | ConvertFrom-Json | Where-Object { $_.title_cn -ne $null -and $_.title_cn -ne \"\" } | Measure-Object\\).Count)",
+      "PowerShell(python -m py_compile \"D:\\\\工作\\\\AI\\\\claude-demo\\\\callie-social-content-workflow\\\\callie-social-content-tool\\\\app.py\"; echo \"OK\")",
+      "WebFetch(domain:siliconflow.cn)",
+      "PowerShell($docs = Get-Content \"D:\\\\工作\\\\AI\\\\claude-demo\\\\docs\\\\data\\\\articles.json\" -Raw | ConvertFrom-Json; $titleCn = \\($docs | Where-Object { $_.title_cn }\\).Count; $total = $docs.Count; Write-Host \"docs/data: $titleCn/$total have title_cn\")",
+      "PowerShell($mi = Get-Content \"D:\\\\工作\\\\AI\\\\claude-demo\\\\marketing-intelligence\\\\data\\\\articles.json\" -Raw | ConvertFrom-Json; $cn = \\($mi | Where-Object { $_.title_cn }\\).Count; $total = $mi.Count; Write-Host \"$cn/$total translated so far\")",
+      "PowerShell($mi = Get-Content \"D:\\\\工作\\\\AI\\\\claude-demo\\\\marketing-intelligence\\\\data\\\\articles.json\" -Raw | ConvertFrom-Json; $cn = \\($mi | Where-Object { $_.title_cn }\\).Count; Write-Host \"$cn/363 translated\")",
+      "PowerShell($r = Invoke-WebRequest -Uri \"http://localhost:8000/\" -UseBasicParsing; $r.StatusCode)",
+      "PowerShell($mi = Get-Content \"D:\\\\工作\\\\AI\\\\claude-demo\\\\marketing-intelligence\\\\data\\\\articles.json\" -Raw | ConvertFrom-Json; $cn = \\($mi | Where-Object { $_.title_cn }\\).Count; Write-Host \"marketing-intelligence: $cn/363\")",
+      "PowerShell(Get-Process *)",
+      "PowerShell(git ls-remote *)"
     ]
   }
 }
