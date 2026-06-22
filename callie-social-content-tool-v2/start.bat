@@ -1,26 +1,31 @@
 @echo off
-chcp 65001 >nul
-title Callie 社媒内容生成工具
+chcp 65001 >nul 2>&1
+title Callie Social Content Tool v2
 
-echo [1/3] 检查 Python 环境...
+echo [1/3] Checking Python...
 python --version >nul 2>&1
 if errorlevel 1 (
-    echo 错误：未找到 Python，请先安装 Python 3.8+
+    echo ERROR: Python not found. Please install Python 3.8+
     pause
     exit /b 1
 )
 
-echo [2/3] 创建虚拟环境（如需要）...
+echo [2/3] Setting up virtual environment...
 if not exist "venv" (
+    echo Creating venv...
     python -m venv venv
-    call venv\Scripts\activate.bat
-    pip install --upgrade pip
-    pip install -r requirements.txt
-    echo 依赖安装完成
-) else (
-    call venv\Scripts\activate.bat
 )
 
-echo [3/3] 启动服务...
-set PORT=8000
-python -m uvicorn app:app --host 127.0.0.1 --port %PORT% --reload
+call venv\Scripts\activate.bat
+pip install --upgrade pip -q
+pip install -r requirements.txt -q
+echo Dependencies installed
+
+echo [3/3] Starting server on port 8000...
+echo Open http://localhost:8000 in your browser
+echo Press Ctrl+C to stop server
+echo.
+
+python -m uvicorn app:app --host 127.0.0.1 --port 8000
+
+pause
