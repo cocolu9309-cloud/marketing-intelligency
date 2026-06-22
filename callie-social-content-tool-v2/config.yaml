@@ -1,0 +1,5 @@
+siliconflow_api_key: "sk-arpjtscqjhtfrpewjckntpdtqrypqzqnksckljgvqvmayrkz"
+llm_model: "Qwen/Qwen3-VL-8B-Instruct"
+vision_model: "Qwen/Qwen3-VL-8B-Instruct"
+image_model: "Qwen/Qwen-Image"
+default_platform: "Instagram"

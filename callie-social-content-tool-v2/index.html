@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Callie 社媒内容生成工具</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Arial, sans-serif; max-width: 680px; margin: 40px auto; padding: 0 20px; background: #f5f7fa; }
+  h1 { text-align: center; color: #1F4E79; margin-bottom: 30px; font-size: 24px; }
+
+  .card { background: #fff; border-radius: 12px; padding: 24px; margin-bottom: 20px;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+
+  .form-group { margin-bottom: 20px; }
+  label { display: block; font-weight: bold; color: #2E75B6; margin-bottom: 8px; font-size: 14px; }
+  .label-hint { font-weight: normal; color: #888; font-size: 12px; margin-left: 8px; }
+
+  input[type="text"], select { width: 100%; padding: 10px 12px; border: 1.5px solid #d0d0d0;
+    border-radius: 8px; font-size: 14px; outline: none; transition: border-color 0.2s; }
+  input[type="text"]:focus, select:focus { border-color: #2E75B6; }
+
+  .upload-area { border: 2px dashed #2E75B6; border-radius: 8px; padding: 24px; text-align: center;
+    cursor: pointer; color: #2E75B6; transition: background 0.2s; }
+  .upload-area:hover { background: #f0f6ff; }
+  .upload-area input { display: none; }
+  .upload-area .hint { font-size: 12px; color: #888; margin-top: 6px; }
+  .preview-grid { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+  .preview-img { width: 60px; height: 60px; object-fit: cover; border-radius: 6px; border: 1.5px solid #ddd; }
+
+  .video-upload { border: 2px dashed #aaa; border-radius: 8px; padding: 16px; text-align: center;
+    cursor: pointer; color: #666; font-size: 14px; transition: background 0.2s; }
+  .video-upload:hover { background: #f8f8f8; }
+  .video-upload input { display: none; }
+
+  .btn-primary { width: 100%; padding: 14px; background: #1F4E79; color: #fff; border: none;
+    border-radius: 10px; font-size: 16px; font-weight: bold; cursor: pointer;
+    transition: background 0.2s; margin-top: 8px; }
+  .btn-primary:hover { background: #2E75B6; }
+  .btn-primary:disabled { background: #aaa; cursor: not-allowed; }
+
+  .log-area { background: #1a1a2e; color: #a0d8a0; border-radius: 8px; padding: 16px;
+    font-family: monospace; font-size: 13px; min-height: 160px; max-height: 300px;
+    overflow-y: auto; white-space: pre-wrap; margin-bottom: 16px; line-height: 1.6; }
+  .log-error { color: #ff8080; }
+  .log-ok { color: #80d4ff; }
+
+  .download-btn { display: none; width: 100%; padding: 14px; background: #28a745; color: #fff;
+    border: none; border-radius: 10px; font-size: 16px; font-weight: bold;
+    cursor: pointer; text-align: center; text-decoration: none; }
+  .download-btn:hover { background: #218838; }
+
+  .error-msg { color: #dc3545; font-size: 13px; margin-top: 6px; display: none; }
+</style>
+</head>
+<body>
+
+<h1>🎬 Callie 社媒内容生成工具</h1>
+
+<div class="card">
+  <div class="form-group">
+    <label>热门贴文内容 <span class="label-hint">必填，图片或视频（mp4）</span></label>
+    <div class="upload-area" id="contentUpload" onclick="document.getElementById('contentInput').click()">
+      <div>📷 点击上传热门图片</div>
+      <div class="hint">支持 JPG/PNG/GIF，或 mp4 视频</div>
+      <input type="file" id="contentInput" accept="image/*,video/mp4" onchange="onContentSelect(this)">
+    </div>
+    <div class="preview-grid" id="contentPreview"></div>
+    <div id="videoPreview" style="display:none; margin-top:10px;">
+      <video id="uploadedVideo" controls style="max-width:100%;border-radius:8px;"></video>
+      <div id="frameCount" style="font-size:12px;color:#888;margin-top:4px;"></div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>目标平台</label>
+    <select id="platform">
+      <option value="Instagram">Instagram</option>
+      <option value="TikTok">TikTok</option>
+      <option value="Pinterest">Pinterest</option>
+    </select>
+  </div>
+
+  <button class="btn-primary" id="generateBtn" onclick="uploadAndGenerate()">开始生成</button>
+  <div class="error-msg" id="errorMsg"></div>
+</div>
+
+<div class="card">
+  <div class="log-area" id="logArea">等待上传...</div>
+  <a class="download-btn" id="downloadContentPack" href="#" style="display:none;">⬇ 下载内容包</a>
+  <a class="download-btn" id="downloadDesignDoc" href="#" style="display:none;">⬇ 下载设计文档</a>
+</div>
+
+<script>
+const contentInput = document.getElementById('contentInput');
+const contentPreview = document.getElementById('contentPreview');
+const uploadedVideo = document.getElementById('uploadedVideo');
+const platform = document.getElementById('platform');
+const generateBtn = document.getElementById('generateBtn');
+const logArea = document.getElementById('logArea');
+const downloadContentPack = document.getElementById('downloadContentPack');
+const downloadDesignDoc = document.getElementById('downloadDesignDoc');
+const errorMsg = document.getElementById('errorMsg');
+
+let uploadedContentType = null; // 'image' or 'video'
+
+function log(msg, type='') {
+  const cls = type === 'error' ? 'log-error' : type === 'ok' ? 'log-ok' : '';
+  logArea.innerHTML += `<span class="${cls}">${msg}</span>\n`;
+  logArea.scrollTop = logArea.scrollHeight;
+}
+
+function onContentSelect(input) {
+  const file = input.files[0];
+  if (!file) return;
+
+  if (file.type.startsWith('video/')) {
+    uploadedContentType = 'video';
+    const video = document.getElementById('uploadedVideo');
+    video.src = URL.createObjectURL(file);
+    video.style.display = 'block';
+    document.getElementById('videoPreview').style.display = 'block';
+    document.getElementById('frameCount').textContent = '视频已加载，将自动抽帧分析';
+    document.getElementById('contentPreview').innerHTML = '';
+  } else {
+    uploadedContentType = 'image';
+    const preview = document.getElementById('contentPreview');
+    preview.innerHTML = '';
+    const img = document.createElement('img');
+    img.src = URL.createObjectURL(file);
+    img.className = 'preview-img';
+    img.onload = () => URL.revokeObjectURL(img.src);
+    preview.appendChild(img);
+    document.getElementById('videoPreview').style.display = 'none';
+  }
+}
+
+async function uploadAndGenerate() {
+  if (!contentInput.files[0]) {
+    alert('请上传热门内容');
+    return;
+  }
+
+  const formData = new FormData();
+  formData.append('file', contentInput.files[0]);
+  formData.append('platform', platform.value);
+
+  log('正在上传内容...');
+
+  try {
+    const response = await fetch('/api/upload-content', {
+      method: 'POST',
+      body: formData
+    });
+    const result = await response.json();
+    if (!response.ok) {
+      log('错误: ' + (result.message || '请求失败'), 'error');
+      return;
+    }
+    if (result.content_analysis) {
+      log('内容分析完成: ' + JSON.stringify(result.content_analysis), 'ok');
+    }
+    if (result.products && result.products.length) {
+      log('推荐产品: ' + result.products.map(p => p.name_en).join(', '), 'ok');
+    }
+    // 显示并链接下载按钮
+    document.getElementById('downloadContentPack').href = '/download/' + result.task_id + '/content';
+    document.getElementById('downloadContentPack').style.display = 'block';
+    document.getElementById('downloadDesignDoc').href = '/download/' + result.task_id + '/design';
+    document.getElementById('downloadDesignDoc').style.display = 'block';
+  } catch (err) {
+    log('错误: ' + err.message, 'error');
+  }
+}
+</script>
+</body>
+</html>
